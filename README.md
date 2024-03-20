@@ -1,7 +1,7 @@
 # 6mA_evolution
- Materials and scripts for 6mA evolution manuscript "". 
+ Materials and scripts for 6mA evolution project. 
  
- The data and code used for the evolution of 6mA in eukaryotes project is structured in 4 folders:
+ The data and code used for the evolution of 6mA in eukaryotes project is structured in 6 folders:
 
 ## AMT_phylogeny
  This folder contains the original fasta files, alignments and IQ-TREE2 phylogeny for the MT-A70 family across eukaryotes.
