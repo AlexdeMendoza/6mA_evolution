@@ -1,0 +1,709 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=607;
+	taxlabels
+	'AWHISG00000002715.1'
+	'AWHISG00000009892.1'
+	'AWHISG00000015107.1'
+	Aaeg_AAEL006299
+	Aaeg_AAEL006991
+	Aaeg_AAEL012156
+	Aaeg_AAEL015123
+	'Aala_g2658.t1'
+	Aano_F0Y774
+	'Acaryochloris_WP_212666582.1'
+	'Acas_BAESF_02539.mRNA.1'
+	'Acas_BAESF_02557.mRNA.1'
+	'Acas_BAESF_04852.mRNA.1'
+	'Acas_BAESF_07975.mRNA.1'
+	'Acas_BAESF_15425.mRNA.1'
+	Acas_g12469
+	Acas_g17516
+	Acas_g3482
+	Acas_g6832
+	Acas_g7085
+	Acas_g8454
+	'Acer_g10382.t1'
+	'Acer_g17892.t1'
+	Acoe_002_00626
+	Acoe_007_00145
+	Acoe_009_00763
+	Acoe_013_00273
+	Acoe_037_00229
+	'Actinomycetia_MBC7230435.1'
+	'Actinomycetia_NPV60451.1'
+	Adig_1823v103360
+	Adig_21618v116957
+	Adig_3567v121218
+	Adig_9457v106363
+	'Afipia_WP_040298405.1'
+	'Agrobacterium_WP_099087231.1'
+	Aipt_AIPGENE17154
+	Aipt_AIPGENE28475
+	Aipt_AIPGENE8025
+	Aker_54628
+	Aker_81346
+	'Alicyclobacillus_WP_206923009.1'
+	Alim_136119
+	Alim_140132
+	'Alteromonadaceae_MAL99434.1'
+	Amel_GB42237
+	Amel_GB50965
+	Amel_GB56003
+	'Anabaena_WP_190479582.1'
+	'Anaerolineaceae_NMC83861.1'
+	'Ancyromonas_TRINITY_DN12889_c0_g1_i2.p2'
+	'Ancyromonas_TRINITY_DN5221_c0_g2_i1.p1'
+	'Apar_Contig_1.g172.t1'
+	'Apar_Contig_14.g583.t1'
+	'Apar_Contig_2.g1373.t1'
+	'Apar_Contig_36.g522.t1'
+	'Apar_Contig_71.g3311.t1'
+	Apis_ACYPI000487
+	Apis_ACYPI004420
+	Apis_ACYPI009969
+	Apis_ACYPI34443
+	'Apla_oki.1.113.t1'
+	'Apla_oki.11.46.t1'
+	Aque_2_1_19267_001
+	Aque_2_1_40781_001
+	Aque_2_1_41873_001
+	'Archaeon_MCQ2816291.1'
+	AscSum_AgR002_g045_t01
+	'Asgard_MCP8720213.1'
+	Atha_AT1G19340
+	Atha_AT4G09980
+	Atha_AT4G10760
+	'Atri_evm_27.model.AmTr_v1.0_scaffold00029.347'
+	'Atri_evm_27.model.AmTr_v1.0_scaffold00041.95'
+	'Atri_evm_27.model.AmTr_v1.0_scaffold00059.108'
+	'Aurantimonas_WP_228241049.1'
+	'Aurelia_Seg114.10'
+	'Aurelia_Seg2698.1'
+	'Aurelia_Seg6120.1'
+	Avag_GSADVT00009738001
+	Avag_GSADVT00015545001
+	Avag_GSADVT00036733001
+	Avag_GSADVT00038920001
+	Avag_GSADVT00050067001
+	Avag_GSADVT00065665001
+	'Azfi_s0020.g015492'
+	'Azfi_s0196.g057266'
+	'Bacteroidales_MBQ6689457.1'
+	Bbel_152280F
+	Bbel_197560F
+	Bbel_275370R
+	Bden_Batde5_12305
+	Bdis_1g71260
+	Bdis_1g75210
+	Bdis_3g27790
+	Bdis_3g51437
+	Bflo_BL19715
+	Bflo_BL22881
+	Bglb_001994
+	Bglb_002751
+	Bglb_005122
+	Blastocystis_CBK22092
+	Blastocystis_CBK23014
+	Blastocystis_CBK24695
+	Bmor_BGIBMGA001955
+	Bmor_BGIBMGA004373
+	Bmor_BGIBMGA009097
+	Bnat_81922
+	'Bner_KAF6018066.1'
+	'Bner_KAF6020880.1'
+	'Bner_KAF6039968.1'
+	'Bradyrhizobium_WP_212504251.1'
+	Brapli_BCPLA2HM01015
+	Brapli_BCPLA2HM10268
+	'CPERKG00000005680.1'
+	'CPERKG00000005905.1'
+	'CPERKG00000010304.1'
+	'Candidatus_MBE3047306.1'
+	Cbra_g34449
+	Cbra_g39884
+	Cbra_g46618
+	Cbra_g46623
+	Ccin_CC1G_11190
+	Ccin_CC1G_14583
+	Ccor_109297
+	Ccor_3188
+	Ccor_87489
+	'Ccrux_g1278.t1'
+	'Ccrux_g1378.t1'
+	'Ccrux_g332.t1'
+	Cele_WBGene00015939
+	Cfra_2329T1
+	Cfra_5859T1
+	Cfra_5950T1
+	Cgig_10004371
+	Cgig_10014467
+	Cgig_10023713
+	'ChA99_scaffold14.g1347.t1'
+	'ChA99_scaffold21.g2154.t1'
+	'ChA99_scaffold6.g2786.t1'
+	Chemi_TCONS_00047476-protein
+	Chemi_TCONS_00048544-protein
+	Chemi_TCONS_00064183-protein
+	Cint_ENSCINP00000003108
+	Cint_ENSCINP00000024384
+	Cint_ENSCINP00000028279
+	'Clen_g2301.t1'
+	'Clen_g2517.t1'
+	'Clen_g5252.t1'
+	'Clen_g8050.t1'
+	'Clen_g9067.t1'
+	Clim_evm3s199
+	Clim_evm86s157
+	'Clostridia_MBQ3124554.1'
+	Cmer_CME116C
+	Cmer_CMH026C
+	Cmil_SINCAMP00000005486
+	Cmil_SINCAMP00000016331
+	Cneo_XP_571196
+	Cneo_XP_572804
+	Cowc_CAOG_04822
+	Cowc_CAOG_07090
+	Cpar_1101Contig11652
+	Cpar_12830Contig6783
+	Cpar_6559Contig37812
+	'Cpar_tig00000215_g18552.t1'
+	'Cpar_tig00000655_g2886.t1'
+	'Cpar_tig00020723_g13477.t1'
+	'Crei_Cre01.g050600.t1.1'
+	'Crei_Cre06.g288100.t1.2'
+	'Crei_Cre06.g295600.t1.2'
+	'Crei_Cre10.g452300.t1.2'
+	'Crei_XP_042920384.1'
+	'Crei_XP_042924083.1'
+	'Crei_XP_042924202.1'
+	'Crei_XP_042928867.1'
+	Crev_37216
+	Crev_80436
+	Cscu_CSCU002786-PA
+	Cscu_CSCU018000-PA
+	Cscu_CSCU025177-PA
+	Csubellip_13342
+	Csubellip_19144
+	Csubellip_20594
+	Csubellip_20697
+	Csubellip_36424
+	Ctel_192776
+	Ctel_218111
+	Ctel_94532
+	Ctob_922858537
+	Ctob_922861401
+	Cvar_EFN52846
+	Cvar_EFN56702
+	Cvar_EFN58866
+	Cvel_13802
+	Cvel_26151
+	Cvel_3436
+	'Cxam_g2696.t1'
+	'Desulfuromonas_MCK9172858.1'
+	'Diphylleia_TRINITY_DN3191_c0_g1_i3.p1'
+	'Diphylleia_TRINITY_DN5780_c0_g1_i1.p1'
+	'Diphylleia_TRINITY_DN6082_c3_g1_i1.p2'
+	'Diphylleia_TRINITY_DN6632_c1_g4_i3.p1'
+	'Djap_g848.t1'
+	'Dluth_KAG8461332.1'
+	Dmel_FBgn0015351_CG14906
+	Dmel_FBgn0032016_Mettl14
+	Dmel_FBgn0039139_Ime4
+	Dpul_EFX60732
+	Dpul_EFX60733
+	Dpul_EFX64183
+	Dpul_EFX64187
+	Dpul_EFX69028
+	Dpul_EFX87640
+	Dpul_EFX88307
+	Drer_ENSDARG00000012827
+	Drer_ENSDARG00000070278
+	Drer_ENSDARG00000088999
+	'Dsalina_Dusal.0196s00018.1.p'
+	'Dsalina_Dusal.0225s00016.1.p'
+	'Dsalina_Dusal.0544s00005.1.p'
+	Ehux_205550
+	Ehux_211665
+	Ehux_449178
+	Emul_000328700
+	Emul_000651200
+	Emul_000931900
+	'Ensifer_WP_077960776.1'
+	Eten_00000805
+	Eten_00004670
+	'Fabomonas_TRINITY_DN14836_c0_g1_i1.p1'
+	'Fabomonas_TRINITY_DN15184_c0_g1_i1.p2'
+	FeldmanniaVirus
+	'Flavobacterium_RZK17851.1'
+	'Fspp_ffun1.m4.4542.m1'
+	'Fspp_ffun1.m4.830.m1'
+	'Fspp_ffun1.m4.8872.m1'
+	'Fspp_ffun1.m4.8873.m1'
+	'Gasp_gasp1.m3.13028.m1'
+	'Gasp_gasp1.m3.29115.m1'
+	'Gasp_gasp1.m3.3179.m1'
+	Gavo_comp123584_c0_seq1_6_ORF1_346
+	Gavo_comp45755_c0_seq1_6_ORF14_328
+	Gavo_comp47883_c0_seq1_6_ORF6_252
+	Gavo_comp57769_c3_seq1_6_ORF11_688
+	Gavo_comp697511_c0_seq1_6_ORF8_130
+	'Gfas_gfas1.m1.10457.m1'
+	'Gfas_gfas1.m1.18757.m1'
+	'Gfas_gfas1.m1.77.m1'
+	Gpro_222853
+	Gpro_52949
+	Gpro_54167
+	Gpro_59323
+	'HalSpi_ScKMIYO_108|arrow.g8153.t1'
+	'HalSpi_ScKMIYO_1|arrow.g3350.t1'
+	'HalSpi_ScKMIYO_436|arrow.g29579.t1'
+	'Hcali_1.1.c11.g460.i1'
+	'Hcali_1.1.c2.g1286.i1'
+	'Hcali_1.1.c9.g46.i1'
+	'Hduj_genemark-nHd.2.3.scaf01935-processed-gene-0.3-mRNA-1'
+	'Hhon_braker1_g10842.t1'
+	Hmag_XP_002158431
+	Hmag_XP_002165937
+	Hmag_XP_002166979
+	'Hmia_MET14_HUMAN|g10298.t1.p1'
+	'Hmia_MTA70_HUMAN|g1485.t1.p1'
+	Hrob_P121421
+	Hrob_P153237
+	Hrob_P164465
+	Hrob_P68987
+	Hrob_P69400
+	Hrob_P79167
+	Hsap_ENSG00000101574_METTL4
+	Hsap_ENSG00000145388_METTL14
+	Hsap_ENSG00000165819_METTL3
+	'HydVir_scaffold13.g107.t1'
+	'HydVir_scaffold28.g80.t1'
+	'HydVir_scaffold87.g70.t1'
+	Ihof_233
+	Ihof_3341
+	Ihof_7358
+	Imul_031620
+	Imul_092540
+	Imul_132470
+	Imul_144580
+	Imul_166770
+	Kfla_kfl00062_0090
+	Kfla_kfl00354_0060
+	Kfla_kfl00743_0050
+	'Lachnospiraceae_MBR3279246.1'
+	'Lan_g23445.t1'
+	'Lan_g712.t1'
+	'Lan_g9070.t1'
+	Lcom_56912
+	Lcom_7454
+	Lcom_82316
+	Lgig_121106
+	Lgig_134083
+	'Lpol_XP_013776038.1'
+	'Lpol_XP_013778642.1'
+	'Lpol_XP_013780321.1'
+	Lsal_EMLSAP00000006715
+	Lsal_EMLSAP00000010793
+	Lsal_EMLSAP00000012843
+	'MalawiJak_EC725274.1.p1'
+	'Mantamonas_TRINITY_DN10817_c0_g1_i2.p3'
+	'Mantamonas_TRINITY_DN11948_c7_g4_i1.p1'
+	'Mantamonas_TRINITY_DN12296_c0_g2_i1.p2'
+	'Mantamonas_TRINITY_DN12455_c1_g2_i1.p1'
+	'Mantamonas_TRINITY_DN7509_c0_g1_i1.p2'
+	Mcir_Mucci2_138359
+	Mcir_Mucci2_157306
+	Mcir_Mucci2_31991
+	Mend_ME000093S10374
+	Mend_ME000155S01389
+	Mend_ME000194S02609
+	'Mesorhizobium_RWG12250.1'
+	Mgut_mgv1a000536m
+	Mgut_mgv1a002262m
+	Mgut_mgv1a018718m
+	Mlei_ML018113a
+	Mlei_ML064933a
+	Mpol_Mapoly0005s0162
+	Mpol_Mapoly0005s0290
+	Mpol_Mapoly0036s0127
+	Mpus_9684629
+	Mpus_9684630
+	Mpus_9687215
+	Mpus_Micpu51320
+	'Mpus_XP_003061531.1'
+	Mver_01134
+	Mver_02535
+	Mver_03108
+	Mver_06347
+	Mvib_g6972
+	Mvib_g986
+	'Mvir_scaffold14.g9.t1'
+	'Mvir_scaffold214.g26.t1'
+	'Mvir_scaffold214.g29.t1'
+	'Mvir_scaffold50.g11.t1'
+	'Mycobacteroides_MBN7310359.1'
+	'Mycobacteroides_WP_100485838.1'
+	NGRUM00000048833
+	NGRUM00000077616
+	NGRUM00000100695
+	'NVEC200_002589_1.1'
+	'NVEC200_002955_1.1'
+	'NVEC200_010261_1.1'
+	Ncra_7381NCU08328
+	'Nfow_XP_044559917.1'
+	'Nfow_XP_044567696.1'
+	'Nfow_XP_044569262.1'
+	'Ngen_g14341.t1'
+	'Ngen_g21808.t1'
+	'Ngen_g29609.t1'
+	'Ngen_g4049.t1'
+	'Ngen_g9591.t1'
+	Ngru_XP_002672452
+	Ngru_XP_002681700
+	'Nitrosopumilaceae_TRZ69880.1'
+	Nk52_evm40s222
+	Nk52_evm40s255
+	'Nocardia_WP_233018928.1'
+	'Nutolong_TRINITY_DN12840_c0_g1_i1|m.39969'
+	'Nutolong_TRINITY_DN8434_c0_g1_i1|m.2668'
+	'Obim_v22000451m.p'
+	'Obim_v22002161m.p'
+	'Obim_v22004187m.p'
+	Ocar_g2987_t1
+	Ocar_g8783_t1
+	Odio_GSOIDT00005026001
+	Odio_GSOIDT00005147001
+	Odio_GSOIDT00012466001
+	Otau_9833589
+	Otau_9835254
+	Otau_XP_003081931
+	'Otau_XP_003081931.2'
+	'Otri_Contig1237.1.g126|MT-A70'
+	'Otri_Contig12701.0.0.g16|MT-A70'
+	'Otri_Contig16314.0.g25|MT-A70'
+	'Otri_Contig17486.0.g100|MT-A70'
+	'Paracoccus_MTH61418.1'
+	'Paracoccus_WCR01664.1'
+	'Paracoccus_WP_191569285.1'
+	'Paramicrosporidium_PJF20092.1'
+	Patl_g3622
+	Patl_g5159
+	Patl_g691
+	Patl_g7909
+	Patl_g8791
+	'Paus_g1107.t1'
+	'Paus_g11829.t1'
+	'Paus_g4418.t1'
+	Pbac_3464405
+	Pbac_3467295
+	Pbac_3471993
+	Pbla_Phybl2_116012
+	Pbla_Phybl2_138029
+	Pbla_Phybl2_172632
+	Pbra_857976536
+	'Pcau_PCA10530.1'
+	'Pcau_PCA25189.1'
+	'Pcau_PCA25189.2'
+	'Pcau_PCA29744.1'
+	'Pcau_PCA29938.1'
+	Pchi_g11627
+	Pchi_g278
+	Pchi_g6608
+	Penium_pm000900g0090
+	Penium_pm012306g0040
+	Penium_pm024151g0010
+	Penium_pm027226g0010
+	'Penium_pm033494.t1'
+	Penium_pm033494g0010
+	Penium_pm036650g0010
+	Penium_pm038239g0010
+	Penium_pm038415g0010
+	Penium_pm046176g0010
+	Pfal_Q8I567_Q8I567
+	Pfal_Q8I6Z2_Q8I6Z2
+	'Pfla_pfl_40v0_9_20150316_1g3902.t1'
+	'Pgot_PG09890.1'
+	'Pgot_PG10064.1'
+	'Phaw_30_tra_m.004496'
+	'Phaw_30_tra_m.006875'
+	'Phaw_30_tra_m.021994'
+	'Pirellulales_MBN2577990.1'
+	'Pirellulales_NUQ60958.1'
+	Pisp_12713
+	Pisp_53885
+	Pmar_ENSPMAG00000007910
+	Pmar_ENSPMAG00000009399
+	'Pnai_g26318.t1'
+	'Pnai_g26319.t1'
+	'Pnai_g9239.t1'
+	Ppat_XP_001758385
+	Ppat_XP_001779017
+	'Pseudomonadota_MCP4294177.1'
+	'Pseudooceanicola_WP_273280918.1'
+	Ptet_A0BAR7_A0BAR7
+	Ptet_A0BTY5_A0BTY5
+	Ptet_A0BUU1_A0BUU1
+	Ptet_A0C3G9_A0C3G9
+	Ptet_A0CUV7_A0CUV7
+	Ptet_A0CVA8_A0CVA8
+	Ptet_A0DN45_A0DN45
+	Ptet_A0DRR5_A0DRR5
+	Ptet_A0E887_A0E887
+	Ptet_Q3SE37_Q3SE37
+	Ptet_Q3SE39_Q3SE39
+	Ptet_Q3SE42_Q3SE42
+	Ptet_Q3SE44_Q3SE44
+	Ptet_Q3SE45_Q3SE45
+	Ptet_Q3SE46_Q3SE46
+	Ptet_Q3SE47_Q3SE47
+	Pvie_g7391
+	Pvie_g7406
+	Pvie_g7571_1-676
+	'Pygsuia_Gene.16241'
+	'Pygsuia_Gene.6827'
+	Rescu_009613-T1
+	Rescu_010630-T1
+	Rescu_016851-T1
+	Rfil_14432_2c
+	Rfil_3764229_3s
+	'Rhizobium_WP_016734132.1'
+	'Rigifila_TRINITY_DN10260_c0_g1_i1.p1'
+	'Rigifila_TRINITY_DN10260_c0_g1_i2.p1'
+	'Rigifila_TRINITY_DN3088_c0_g1_i1.p2'
+	'Rigifila_TRINITY_DN8915_c0_g1_i1.p1'
+	Rirr_123982
+	Rirr_336453
+	Rirr_40362
+	Rirr_67236
+	Rory_11347
+	Rory_14881
+	Rory_16696
+	'Rvar_RvY_17510.1'
+	'Sacu_v1.1_s0018.g007527'
+	'Sacu_v1.1_s0019.g007742'
+	'Sacu_v1.1_s0199.g025574'
+	Sagg_95759
+	Sagg_99697
+	Sarc_SARC_00130
+	Sbic_01g043900
+	Sbic_01g047070
+	Sbic_04g032100
+	'Sbro_EVM0001249.1'
+	'Sbro_EVM0013897.1'
+	'Sbro_EVM0021373.1'
+	Scer_SCRT_01181
+	Scer_SCRT_05356
+	Scil_36631
+	Scil_64209
+	Scil_6763
+	Sdes_comp19121_c0_seq1_fr2
+	Sdes_comp19121_c0_seq2_fr2
+	Sdes_comp20901_c0_seq1_fr5
+	Sdes_comp20901_c0_seq1_fr6
+	Sdes_comp20901_c0_seq2_fr4
+	Sdes_comp20901_c0_seq2_fr6
+	Sdes_comp20901_c0_seq3_fr6
+	Sdes_comp20901_c0_seq4_fr4
+	Skaw_221166
+	Skow_Sakowv30024575m
+	Skow_Sakowv30046280m
+	Smalay_011500-T1
+	Smalay_022648-T1
+	Smalay_024871-T1
+	Sman_Smp_146300
+	Sman_Smp_172190
+	Smar_002698
+	Smar_004352
+	Smar_007641
+	Smim_KFM75515
+	Smim_KFM79549
+	Smim_KFM81774
+	Smin_005563_t1
+	Smin_027718_t1
+	Smoe_XP_002963171
+	Smoe_XP_002981617
+	Smoe_XP_002989604
+	Smus_SM000037S13575
+	Smus_SM000046S16435
+	Smus_SM000047S16912
+	Smus_SM000098S25145
+	Smus_SM000100S09387
+	Smus_SM000130S27122
+	Smus_SM000267S09857
+	Smus_SM000355S13190
+	Spar_SPRG_03347T0
+	Spar_SPRG_10355T0
+	Spar_SPRG_19239T0
+	'Sphfalx0022s0181.1.p'
+	'Sphfalx0030s0034.1.p'
+	'Sphfalx0312s0012.1.p'
+	'Sphingomonas_WP_010184758.1'
+	Spironucleus_EST46996
+	Spom_NP_595970_1
+	Spun_SPPG_00725
+	Spun_SPPG_03319
+	Spun_SPPG_04738
+	Spun_SPPG_05756
+	Spun_SPPG_06562
+	'Spur_WHL22.335975'
+	'Spur_WHL22.433956'
+	'Spur_WHL22.643249'
+	'Spur_WHL22.643252'
+	Sros_PTSG_03395
+	Sros_PTSG_04805
+	Sros_PTSG_05864
+	SteCar_L596_943688
+	'Stygiella_Gene.24450__a14462_44__g.24450__m.24450_type_5prime_partial_len_308_gc_universal_a14462_44_2-925___'
+	Tadh_XP_002114883
+	Tcas_TC006811
+	Tcas_TC009294
+	Tcas_TC009511
+	'Telonema_P2_TRINITY_DN52795_c0_g1__TRINITY_DN52795_c0_g1_i1__g.23982'
+	'Telonema_P2_TRINITY_DN8923_c0_g1__TRINITY_DN8923_c0_g1_i1__g.70166'
+	'Telonema_subtilis_TRINITY_DN19586_c0_g1__TRINITY_DN19586_c0_g1_i1__g.30559'
+	Tgon_XP_002365577
+	Tgon_XP_002371302
+	'Thermodesulfobacteriota_GJM17538.1'
+	Tkit_KII66049
+	Tkit_KII69994
+	Tkit_KII73176
+	'Trimastix_TRINITY_DN21600_c0_g1_i1.p1'
+	'Trimastix_TRINITY_DN22229_c0_g1_i1.p1'
+	'Trimastix_TRINITY_DN25078_c0_g3_i3.p2'
+	'Trimastix_TRINITY_DN25403_c3_g1_i1.p1'
+	'Trimastix_TRINITY_DN25969_c3_g8_i1.p1'
+	'Tther_AMT1_EAR84411.3'
+	'Tther_AMT2_EAR99108.2'
+	'Tther_AMT5_EAR99483.3'
+	'Tther_AMT6_EAR90090.2'
+	'Tther_AMT7_EAS04360.2'
+	Ttra_AMSG_05730
+	Ttra_AMSG_07188
+	Ttra_AMSG_10222
+	Turt_05g03940
+	Turt_16g00760
+	Turt_31g01200
+	Tvag_XP_001299862
+	Tvag_XP_001325789
+	Tvag_XP_001579626
+	Tvag_XP_001580474
+	'Twilhelma_g10235.t1'
+	'Twilhelma_g5812.t1'
+	'Twilhelma_g8541.t1'
+	Umar_217644
+	Umar_223403
+	Umar_237704
+	Umar_238969
+	Umar_259486
+	Umay_XP_758552
+	Umay_XP_759136
+	Vbra_11412
+	Vbra_21243
+	Vbra_21923
+	Vcar_XP_002946626
+	Vcar_XP_002949262
+	Vcar_XP_002957375
+	Znev_KDR10555
+	Znev_KDR18181
+	Znev_KDR20261
+	'medusavirus_.fna|AP018495.1_76'
+	'uncultured_BCV01680.1'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Alim_136119[&!color=#000099]:0.187011,Sagg_99697[&!color=#000099]:0.168355,(Aker_54628[&!color=#000099]:0.266378,(((((((((((('AWHISG00000009892.1'[&!color=#000099]:0.400769,('Apar_Contig_1.g172.t1'[&!color=#000099]:0.197253,Ihof_3341[&!color=#000099]:0.148203)[&label="96.5/100",!color=#000099]:0.173508)[&label="43.3/99",!color=#000099]:0.049552,Cfra_2329T1[&!color=#000099]:0.538153)[&label="99.2/100",!color=#000099]:0.251805,((Pchi_g6608[&!color=#000099]:0.195953,Pvie_g7391[&!color=#000099]:0.213749)[&label="98.3/100",!color=#000099]:0.264583,(Blastocystis_CBK22092[&!color=#000099]:1.245575,Cowc_CAOG_07090[&!color=#000099]:0.411325)[&label="62.7/86",!color=#000099]:0.149173)[&label="72.2/54",!color=#000099]:0.064727)[&label="87.9/54",!color=#000099]:0.077745,((Crev_37216[&!color=#000099]:0.404007,Patl_g5159[&!color=#000099]:0.937311)[&label="79.3/95",!color=#000099]:0.11836,((Mver_02535[&!color=#000099]:0.248635,(((((Pbla_Phybl2_138029[&!color=#000099]:0.079302,Rory_14881[&!color=#000099]:0.186818)[&label="71.1/100",!color=#000099]:0.067824,Mcir_Mucci2_157306[&!color=#000099]:0.317031)[&label="96.5/100",!color=#000099]:0.15424,Umar_238969[&!color=#000099]:0.150507)[&label="89/100",!color=#000099]:0.074361,Rirr_123982[&!color=#000099]:0.143881)[&label="55.8/88",!color=#000099]:0.06832,Spun_SPPG_05756[&!color=#000099]:0.411926)[&label="36.7/48",!color=#000099]:0.045553)[&label="44.6/46",!color=#000099]:0.073301,(Pisp_12713[&!color=#000099]:0.175247,'Fabomonas_TRINITY_DN14836_c0_g1_i1.p1'[&!color=#000099]:1.099934)[&label="60.2/45",!color=#000099]:0.100492)[&label="23.5/70",!color=#000099]:0.013837)[&label="95.6/99",!color=#000099]:0.131004)[&label="86.5/54",!color=#000099]:0.058629,(((((('CPERKG00000005680.1'[&!color=#000099]:0.0,'CPERKG00000010304.1'[&!color=#000099]:0.0)[&!color=#000099]:3.0E-6,Nk52_evm40s255[&!color=#000099]:1.0E-6)[&label="99.2/100",!color=#000099]:0.325309,(Sdes_comp19121_c0_seq1_fr2[&!color=#000099]:0.062868,Sdes_comp19121_c0_seq2_fr2[&!color=#000099]:2.0E-6)[&label="99/100",!color=#000099]:0.302527)[&label="97.6/100",!color=#000099]:0.280539,(Mver_01134[&!color=#000099]:0.385647,Umar_223403[&!color=#000099]:0.444614)[&label="99.6/100",!color=#000099]:0.482614)[&label="80.3/87",!color=#000099]:0.135606,(Gpro_52949[&!color=#000099]:0.643444,(((((((((((((Mpus_9684629[&!color=#990099]:0.507831,(('HalSpi_ScKMIYO_1|arrow.g3350.t1'[&!color=#990099]:0.023789,'Pcau_PCA29938.1'[&!color=#990099]:0.468775)[&label="96.6/100",!color=#990099]:0.221577,(Ctel_94532[&!color=#990099]:0.306321,'Ngen_g29609.t1'[&!color=#990099]:0.387359)[&label="64.7/87",!color=#990099]:0.085251)[&label="24.8/82",!color=#990099]:0.039366)[&label="0/78",!color=#990099]:0.009651,'Pcau_PCA29744.1'[&!color=#990099]:0.149243)[&label="82/90",!color=#990099]:0.071804,'Paus_g1107.t1'[&!color=#990099]:0.397198)[&label="86.9/87",!color=#990099]:0.066426,((('Obim_v22004187m.p'[&!color=#990099]:0.383664,'Sbro_EVM0021373.1'[&!color=#990099]:0.396839)[&label="84.7/99",!color=#990099]:0.074863,Cgig_10014467[&!color=#990099]:0.456087)[&label="83.6/96",!color=#990099]:0.072701,Hrob_P69400[&!color=#990099]:0.535028)[&label="81.3/49",!color=#990099]:0.04853)[&label="38.6/35",!color=#990099]:0.013883,(((((((((('Trimastix_TRINITY_DN22229_c0_g1_i1.p1'[&!color=#990099]:3.0E-6,'Mantamonas_TRINITY_DN10817_c0_g1_i2.p3'[&!color=#990099]:0.357474)[&label="76.2/84",!color=#990099]:0.771293,'Clen_g8050.t1'[&!color=#990099]:0.612462)[&label="70.7/82",!color=#990099]:0.246855,'Ccrux_g1278.t1'[&!color=#990099]:0.374251)[&label="87.3/82",!color=#990099]:0.177767,Rescu_016851-T1[&!color=#990099]:0.349249)[&label="88.9/87",!color=#990099]:0.105074,(((Bden_Batde5_12305[&!color=#990099]:0.541782,Spun_SPPG_04738[&!color=#990099]:0.545017)[&label="95.2/80",!color=#990099]:0.245866,(((Hmag_XP_002158431[&!color=#990099]:3.0E-6,'Dsalina_Dusal.0225s00016.1.p'[&!color=#990099]:1.236134)[&label="43.6/84",!color=#990099]:0.146478,'HydVir_scaffold13.g107.t1'[&!color=#990099]:0.088945)[&label="99.3/92",!color=#990099]:0.240241,(Chemi_TCONS_00064183-protein[&!color=#990099]:0.368947,Spom_NP_595970_1[&!color=#990099]:2.722048)[&label="54.7/67",!color=#990099]:0.063415)[&label="83.4/75",!color=#990099]:0.076874)[&label="86.6/92",!color=#990099]:0.074106,((((('Fspp_ffun1.m4.4542.m1'[&!color=#990099]:0.083812,'Gasp_gasp1.m3.3179.m1'[&!color=#990099]:0.0544)[&label="76.3/100",!color=#990099]:0.032622,'Gfas_gfas1.m1.10457.m1'[&!color=#990099]:0.196433)[&label="96.2/99",!color=#990099]:0.089324,Adig_3567v121218[&!color=#990099]:0.006487)[&label="12/39",!color=#990099]:0.027342,Adig_21618v116957[&!color=#990099]:0.001208)[&label="99/100",!color=#990099]:0.160386,('NVEC200_002955_1.1'[&!color=#990099]:0.191977,Aipt_AIPGENE17154[&!color=#990099]:0.286226)[&label="90/92",!color=#990099]:0.102928)[&label="97.9/92",!color=#990099]:0.149827)[&label="81.9/82",!color=#990099]:0.052383)[&label="90.5/91",!color=#990099]:0.060098,'Aurelia_Seg2698.1'[&!color=#990099]:0.244842)[&label="87.8/92",!color=#990099]:0.069947,(Cint_ENSCINP00000024384[&!color=#990099]:0.39912,((((Smalay_011500-T1[&!color=#990099]:0.304761,Aque_2_1_40781_001[&!color=#990099]:0.500449)[&label="63.3/90",!color=#990099]:0.052832,('Hhon_braker1_g10842.t1'[&!color=#990099]:0.134302,Tadh_XP_002114883[&!color=#990099]:0.253541)[&label="99.9/100",!color=#990099]:0.339335)[&label="5.5/84",!color=#990099]:0.057118,(Lcom_82316[&!color=#990099]:0.258873,Scil_36631[&!color=#990099]:0.125725)[&label="100/99",!color=#990099]:0.430159)[&label="67.4/56",!color=#990099]:0.093319,(Avag_GSADVT00050067001[&!color=#990099]:0.037396,Avag_GSADVT00065665001[&!color=#990099]:3.0E-6)[&label="100/100",!color=#990099]:0.949016)[&label="12.6/54",!color=#990099]:0.016227)[&label="72.9/55",!color=#990099]:0.03092)[&label="74.5/69",!color=#990099]:0.061112,Bglb_002751[&!color=#990099]:0.533626)[&label="82.7/81",!color=#990099]:0.045578,(Lgig_121106[&!color=#990099]:0.532276,('Lan_g9070.t1'[&!color=#990099]:0.399611,'Mvir_scaffold214.g29.t1'[&!color=#990099]:0.507637)[&label="82.8/71",!color=#990099]:0.112031)[&label="62.6/36",!color=#990099]:0.031685)[&label="57.7/45",!color=#990099]:0.028774,((((Drer_ENSDARG00000088999[&!color=#990099]:0.213966,Pmar_ENSPMAG00000009399[&!color=#990099]:0.310357)[&label="24.1/100",!color=#990099]:0.051965,Hsap_ENSG00000101574_METTL4[&!color=#990099]:0.250657)[&label="4.7/93",!color=#990099]:0.024104,Cmil_SINCAMP00000005486[&!color=#990099]:0.399815)[&label="93.7/100",!color=#990099]:0.105381,Bbel_275370R[&!color=#990099]:0.227231)[&label="96.8/99",!color=#990099]:0.145402)[&label="82.2/37",!color=#990099]:0.037947)[&label="94.2/82",!color=#990099]:0.089999,('Lpol_XP_013780321.1'[&!color=#990099]:0.405521,Smim_KFM75515[&!color=#990099]:0.376944)[&label="84.5/86",!color=#990099]:0.087675)[&label="84.4/84",!color=#990099]:0.044448,((Apis_ACYPI34443[&!color=#990099]:0.313852,(((Amel_GB50965[&!color=#990099]:0.272268,Bmor_BGIBMGA001955[&!color=#990099]:0.48755)[&label="82.7/90",!color=#990099]:0.110298,(Znev_KDR10555[&!color=#990099]:0.374158,Tcas_TC009511[&!color=#990099]:0.402609)[&label="0/40",!color=#990099]:0.05325)[&label="89.1/65",!color=#990099]:0.09582,((Aaeg_AAEL006991[&!color=#990099]:0.383699,Dmel_FBgn0015351_CG14906[&!color=#990099]:0.50064)[&label="93.7/100",!color=#990099]:0.199563,((Lsal_EMLSAP00000006715[&!color=#990099]:0.458641,Cscu_CSCU018000-PA[&!color=#990099]:0.337715)[&label="86/18",!color=#990099]:0.365056,'Phaw_30_tra_m.021994'[&!color=#990099]:0.855505)[&label="64.4/18",!color=#990099]:0.093884)[&label="97/18",!color=#990099]:0.201372)[&label="47.7/45",!color=#990099]:0.048233)[&label="80.8/57",!color=#990099]:0.068175,Dpul_EFX88307[&!color=#990099]:0.597249)[&label="98.5/84",!color=#990099]:0.2209)[&label="82.7/75",!color=#990099]:0.038421,((('Hduj_genemark-nHd.2.3.scaf01935-processed-gene-0.3-mRNA-1'[&!color=#990099]:0.137739,'Rvar_RvY_17510.1'[&!color=#990099]:0.348331)[&label="75.3/100",!color=#990099]:0.116657,'Mvir_scaffold214.g26.t1'[&!color=#990099]:0.40884)[&label="76.6/92",!color=#990099]:0.155534,Smar_004352[&!color=#990099]:0.682522)[&label="85.9/84",!color=#990099]:0.119029)[&label="97/68",!color=#990099]:0.161981,((((('Dluth_KAG8461332.1'[&!color=#990099]:0.514531,Bnat_81922[&!color=#990099]:0.710164)[&label="64.8/69",!color=#990099]:0.14089,('Telonema_P2_TRINITY_DN8923_c0_g1__TRINITY_DN8923_c0_g1_i1__g.70166'[&!color=#990099]:0.374886,'Telonema_subtilis_TRINITY_DN19586_c0_g1__TRINITY_DN19586_c0_g1_i1__g.30559'[&!color=#990099]:0.396294)[&label="95.4/100",!color=#990099]:0.39972)[&label="0/49",!color=#990099]:0.010072,(Cvel_26151[&!color=#990099]:0.683667,Vbra_21243[&!color=#990099]:0.937538)[&label="83/86",!color=#990099]:0.178173)[&label="89.8/98",!color=#990099]:0.154659,(Gavo_comp47883_c0_seq1_6_ORF6_252[&!color=#990099]:0.288602,(Aano_F0Y774[&!color=#990099]:0.660448,Acas_g12469[&!color=#990099]:0.459878)[&label="89.3/100",!color=#990099]:0.324815)[&label="93.2/100",!color=#990099]:0.33872)[&label="91/95",!color=#990099]:0.127421,((((Patl_g7909[&!color=#990099]:0.580013,Pbra_857976536[&!color=#990099]:0.723223)[&label="77.3/69",!color=#990099]:0.095615,((((Mcir_Mucci2_31991[&!color=#990099]:0.116539,Rory_16696[&!color=#990099]:0.214772)[&label="98.7/100",!color=#990099]:0.276065,Umar_237704[&!color=#990099]:0.456484)[&label="21.3/26",!color=#990099]:0.056398,Pbla_Phybl2_116012[&!color=#990099]:0.175184)[&label="52.7/47",!color=#990099]:0.061177,Mver_06347[&!color=#990099]:0.55174)[&label="92.9/83",!color=#990099]:0.179968)[&label="86.2/71",!color=#990099]:0.09134,((Cfra_5859T1[&!color=#990099]:0.476778,(((('Hcali_1.1.c9.g46.i1'[&!color=#990099]:0.013364,(Pbac_3464405[&!color=#990099]:0.008751,Pbac_3467295[&!color=#990099]:0.025759)[&label="83.5/99",!color=#990099]:0.017165)[&label="96.7/99",!color=#990099]:0.164572,Mlei_ML018113a[&!color=#990099]:0.552238)[&label="95.3/100",!color=#990099]:0.209988,('Candidatus_MBE3047306.1'[&!color=#990099]:0.200197,Ncra_7381NCU08328[&!color=#990099]:0.358906)[&label="100/100",!color=#990099]:0.57649)[&label="54.1/96",!color=#990099]:0.06044,(Ccor_3188[&!color=#990099]:0.864962,'AWHISG00000002715.1'[&!color=#990099]:0.908454)[&label="88.3/87",!color=#990099]:0.192524)[&label="59.7/67",!color=#990099]:0.069637)[&label="84.5/69",!color=#990099]:0.086878,(Pchi_g11627[&!color=#990099]:0.198863,Pvie_g7406[&!color=#990099]:0.375335)[&label="99.6/100",!color=#990099]:0.31735)[&label="81.8/65",!color=#990099]:0.06458)[&label="84.5/86",!color=#990099]:0.067853,('Apar_Contig_71.g3311.t1'[&!color=#990099]:0.200928,Ihof_233[&!color=#990099]:0.241737)[&label="99.5/100",!color=#990099]:0.259754)[&label="66.7/83",!color=#990099]:0.038991)[&label="86.8/83",!color=#990099]:0.087698)[&label="31.3/49",!color=#990099]:0.086263,((((((((((((Sbic_01g043900[&!color=#990099]:0.296867,Bdis_1g71260[&!color=#990099]:0.201653)[&label="98.9/100",!color=#990099]:0.225405,(Acoe_007_00145[&!color=#990099]:0.097714,(Mgut_mgv1a018718m[&!color=#990099]:0.161439,Atha_AT1G19340[&!color=#990099]:0.242957)[&label="84.1/100",!color=#990099]:0.042763)[&label="90/100",!color=#990099]:0.051916)[&label="47.9/99",!color=#990099]:0.028657,'Atri_evm_27.model.AmTr_v1.0_scaffold00059.108'[&!color=#990099]:0.192593)[&label="97.7/100",!color=#990099]:0.116211,((Smoe_XP_002981617[&!color=#990099]:2.0E-6,Smoe_XP_002963171[&!color=#990099]:0.023381)[&label="99.9/100",!color=#990099]:0.31836,'Sacu_v1.1_s0019.g007742'[&!color=#990099]:0.323041)[&label="58.5/98",!color=#990099]:0.098556)[&label="85.2/98",!color=#990099]:0.054476,(Mpol_Mapoly0005s0290[&!color=#990099]:0.225208,'Sphfalx0022s0181.1.p'[&!color=#990099]:0.106843)[&label="64.1/92",!color=#990099]:0.031152)[&label="71.4/90",!color=#990099]:0.030388,Ppat_XP_001758385[&!color=#990099]:0.117023)[&label="80.7/98",!color=#990099]:0.083436,((Smus_SM000100S09387[&!color=#990099]:0.015355,Smus_SM000355S13190[&!color=#990099]:0.024823)[&label="100/100",!color=#990099]:0.365511,Mend_ME000194S02609[&!color=#990099]:0.26756)[&label="64.8/93",!color=#990099]:0.067798)[&label="77.9/91",!color=#990099]:0.048309,Cbra_g34449[&!color=#990099]:0.234145)[&label="94.4/94",!color=#990099]:0.152049,Kfla_kfl00743_0050[&!color=#990099]:0.211916)[&label="74.3/92",!color=#990099]:0.101564,((Penium_pm033494g0010[&!color=#990099]:0.268598,(Penium_pm038239g0010[&!color=#990099]:3.0E-6,'Penium_pm033494.t1'[&!color=#990099]:1.0E-6)[&label="98/100",!color=#990099]:0.126927)[&label="0/41",!color=#990099]:0.005717,Penium_pm038415g0010[&!color=#990099]:3.0E-6)[&label="99.8/100",!color=#990099]:0.305824)[&label="94.6/99",!color=#990099]:0.135616,((Csubellip_36424[&!color=#990099]:0.290327,Cvar_EFN52846[&!color=#990099]:0.417679)[&label="77.8/96",!color=#990099]:0.072483,('ChA99_scaffold21.g2154.t1'[&!color=#990099]:0.470157,Ehux_205550[&!color=#990099]:1.093055)[&label="83.7/92",!color=#990099]:0.114883)[&label="50.1/90",!color=#990099]:0.045807)[&label="93.7/95",!color=#990099]:0.173676,'Diphylleia_TRINITY_DN6082_c3_g1_i1.p2'[&!color=#990099]:0.702029)[&label="68.5/93",!color=#990099]:0.091808)[&label="74.4/65",!color=#990099]:0.072189,(((('Cpar_tig00020723_g13477.t1'[&!color=#990099]:2.0E-6,Cpar_6559Contig37812[&!color=#990099]:3.0E-6)[&label="100/100",!color=#990099]:0.587183,((Spar_SPRG_19239T0[&!color=#990099]:0.517226,Turt_16g00760[&!color=#990099]:1.172329)[&label="77/91",!color=#990099]:0.139228,(Tkit_KII66049[&!color=#990099]:0.698119,Spironucleus_EST46996[&!color=#990099]:1.33627)[&label="84.2/94",!color=#990099]:0.328934)[&label="70.7/67",!color=#990099]:0.068536)[&label="45.9/65",!color=#990099]:0.065559,(Sros_PTSG_05864[&!color=#990099]:0.514289,(((AscSum_AgR002_g045_t01[&!color=#990099]:0.584681,SteCar_L596_943688[&!color=#990099]:0.464824)[&label="23.6/98",!color=#990099]:0.1236,Cele_WBGene00015939[&!color=#990099]:0.866765)[&label="75.4/100",!color=#990099]:0.103946,Odio_GSOIDT00012466001[&!color=#990099]:0.970529)[&label="92/97",!color=#990099]:0.176969)[&label="84.6/73",!color=#990099]:0.092293)[&label="81.6/67",!color=#990099]:0.051475,'Rigifila_TRINITY_DN3088_c0_g1_i1.p2'[&!color=#990099]:0.676316)[&label="75.2/72",!color=#990099]:0.062055)[&label="100/98",!color=#990099,!name="METTL4"]:0.972559,(((((('medusavirus_.fna|AP018495.1_76'[&!color=#666666]:0.557847,('Fabomonas_TRINITY_DN15184_c0_g1_i1.p2'[&!color=#666666]:0.447135,FeldmanniaVirus[&!color=#666666]:1.222399)[&label="75.1/80",!color=#666666]:0.575463)[&label="69.3/80",!color=#666666]:0.164159,(('Acaryochloris_WP_212666582.1'[&!color=#666666]:0.616393,'Ensifer_WP_077960776.1'[&!color=#666666]:0.411967)[&label="14.6/54",!color=#666666]:0.076269,'Anabaena_WP_190479582.1'[&!color=#666666]:0.669223)[&label="92.9/98",!color=#666666]:0.221297)[&label="67.9/91",!color=#666666]:0.101292,(('Alteromonadaceae_MAL99434.1'[&!color=#666666]:0.211991,(('Paracoccus_WCR01664.1'[&!color=#666666]:0.118686,('Paracoccus_MTH61418.1'[&!color=#666666]:0.132931,'Paracoccus_WP_191569285.1'[&!color=#666666]:0.13871)[&label="82.6/99",!color=#666666]:0.071424)[&label="97.8/100",!color=#666666]:0.138727,('Aurantimonas_WP_228241049.1'[&!color=#666666]:0.104761,(('Agrobacterium_WP_099087231.1'[&!color=#666666]:0.233808,'Rhizobium_WP_016734132.1'[&!color=#666666]:0.115614)[&label="93.9/100",!color=#666666]:0.105425,'Mesorhizobium_RWG12250.1'[&!color=#666666]:0.336214)[&label="90.1/100",!color=#666666]:0.120057)[&label="85.9/100",!color=#666666]:0.08758)[&label="61.3/90",!color=#666666]:0.016124)[&label="98.8/100",!color=#666666]:0.212391,(((('Bacteroidales_MBQ6689457.1'[&!color=#666666]:0.242543,'Clostridia_MBQ3124554.1'[&!color=#666666]:0.404374)[&label="86.2/100",!color=#666666]:0.193439,'uncultured_BCV01680.1'[&!color=#666666]:0.623224)[&label="60.4/100",!color=#666666]:0.22739,'Sphingomonas_WP_010184758.1'[&!color=#666666]:0.578262)[&label="76.4/100",!color=#666666]:0.139051,'Alicyclobacillus_WP_206923009.1'[&!color=#666666]:0.37344)[&label="82.2/100",!color=#666666]:0.10088)[&label="89/100",!color=#666666]:0.117163)[&label="84.2/92",!color=#666666]:0.127901,((('Mycobacteroides_MBN7310359.1'[&!color=#666666]:0.10471,'Mycobacteroides_WP_100485838.1'[&!color=#666666]:0.078594)[&label="99.8/100",!color=#666666]:0.359472,('Pirellulales_MBN2577990.1'[&!color=#666666]:0.19084,(('Actinomycetia_NPV60451.1'[&!color=#666666]:0.033003,'Actinomycetia_MBC7230435.1'[&!color=#666666]:0.016354)[&label="100/100",!color=#666666]:0.158315,((('Pirellulales_NUQ60958.1'[&!color=#666666]:0.275095,('Bradyrhizobium_WP_212504251.1'[&!color=#666666]:0.059867,'Afipia_WP_040298405.1'[&!color=#666666]:0.050402)[&label="97.9/100",!color=#666666]:0.141373)[&label="67.4/69",!color=#666666]:0.063575,'Desulfuromonas_MCK9172858.1'[&!color=#666666]:0.218962)[&label="66.9/42",!color=#666666]:0.058246,'Anaerolineaceae_NMC83861.1'[&!color=#666666]:0.231526)[&label="56.6/23",!color=#666666]:0.024403)[&label="36.7/34",!color=#666666]:0.027947)[&label="94.9/96",!color=#666666]:0.172231)[&label="94.5/100",!color=#666666]:0.209411,('Nocardia_WP_233018928.1'[&!color=#666666]:0.361202,'Lachnospiraceae_MBR3279246.1'[&!color=#666666]:0.561125)[&label="96.4/100",!color=#666666]:0.298281)[&label="93.2/100",!color=#666666]:0.204335)[&label="43/88",!color=#666666]:0.130511,'Pseudooceanicola_WP_273280918.1'[&!color=#666666]:0.825667)[&label="29.9/55",!color=#666666]:0.132642,'Nitrosopumilaceae_TRZ69880.1'[&!color=#666666]:0.42373)[&label="77.5/100",!color=#666666]:0.137215)[&label="89.5/98"]:0.185372,((((((((((((((Otau_9833589[&!color=#3399ff]:0.0,Otau_XP_003081931[&!color=#3399ff]:0.0)[&!color=#3399ff]:3.0E-6,'Otau_XP_003081931.2'[&!color=#3399ff]:3.0E-6)[&label="86.2/100",!color=#3399ff]:0.040729,((Mpus_9687215[&!color=#3399ff]:0.0,Mpus_Micpu51320[&!color=#3399ff]:0.0)[&!color=#3399ff]:1.0E-6,'Mpus_XP_003061531.1'[&!color=#3399ff]:1.0E-6)[&label="96.3/100",!color=#3399ff]:0.078505)[&label="99.4/100",!color=#3399ff]:0.164769,('ChA99_scaffold6.g2786.t1'[&!color=#3399ff]:0.105385,Cvar_EFN58866[&!color=#3399ff]:0.051008)[&label="23.2/94",!color=#3399ff]:0.037899)[&label="16.9/97",!color=#3399ff]:0.071612,(('Crei_XP_042924083.1'[&!color=#3399ff]:3.0E-6,'Crei_Cre06.g288100.t1.2'[&!color=#3399ff]:3.0E-6)[&label="92.9/100",!color=#3399ff]:0.053473,Vcar_XP_002946626[&!color=#3399ff]:0.028467)[&label="86.9/100",!color=#3399ff]:0.048584)[&label="92.6/100",!color=#3399ff]:0.077539,Csubellip_19144[&!color=#3399ff]:0.079884)[&label="97.7/100",!color=#3399ff]:0.108508,((Aker_81346[&!color=#3399ff]:0.169161,(Alim_140132[&!color=#3399ff]:0.065668,Sagg_95759[&!color=#3399ff]:0.062614)[&label="49.2/100",!color=#3399ff]:0.029395)[&label="98.8/100",!color=#3399ff]:0.130092,((Rfil_3764229_3s[&!color=#3399ff]:0.186224,Cmer_CME116C[&!color=#3399ff]:0.228404)[&label="93.6/96",!color=#3399ff]:0.079092,(('Stygiella_Gene.24450__a14462_44__g.24450__m.24450_type_5prime_partial_len_308_gc_universal_a14462_44_2-925___'[&!color=#3399ff]:0.252015,'Mantamonas_TRINITY_DN7509_c0_g1_i1.p2'[&!color=#3399ff]:0.405226)[&label="58.2/89",!color=#3399ff]:0.044524,(Blastocystis_CBK23014[&!color=#3399ff]:0.330672,((Blastocystis_CBK24695[&!color=#3399ff]:0.475158,(((Imul_092540[&!color=#3399ff]:0.061502,'Tther_AMT1_EAR84411.3'[&!color=#3399ff]:0.048962)[&label="97/100",!color=#3399ff]:0.101899,(Ptet_Q3SE39_Q3SE39[&!color=#3399ff]:0.002851,(Ptet_A0BAR7_A0BAR7[&!color=#3399ff]:0.548506,'Thermodesulfobacteriota_GJM17538.1'[&!color=#3399ff]:1.252262)[&label="41.7/68",!color=#3399ff]:0.01558)[&label="97.5/69",!color=#3399ff]:0.144031)[&label="86.5/69",!color=#3399ff]:0.062946,(Ptet_Q3SE44_Q3SE44[&!color=#3399ff]:0.022423,Ptet_Q3SE45_Q3SE45[&!color=#3399ff]:3.0E-6)[&label="100/100",!color=#3399ff]:0.258718)[&label="90.5/100",!color=#3399ff]:0.08418)[&label="72.3/100",!color=#3399ff]:0.021661,('Otri_Contig12701.0.0.g16|MT-A70'[&!color=#3399ff]:0.039228,'Otri_Contig16314.0.g25|MT-A70'[&!color=#3399ff]:0.194971)[&label="99.4/100",!color=#3399ff]:0.11207)[&label="89.3/100",!color=#3399ff]:0.052317)[&label="41.9/91",!color=#3399ff]:0.021737)[&label="84.2/92",!color=#3399ff]:0.038867)[&label="89.6/91",!color=#3399ff]:0.063552)[&label="67.1/89",!color=#3399ff]:0.017499)[&label="90.2/91",!color=#3399ff]:0.037751,((((((((('AWHISG00000015107.1'[&!color=#3399ff]:0.173311,('Apar_Contig_36.g522.t1'[&!color=#3399ff]:0.025856,Ihof_7358[&!color=#3399ff]:0.062008)[&label="87.7/100",!color=#3399ff]:0.045274)[&label="53.8/98",!color=#3399ff]:0.014506,(Cfra_5950T1[&!color=#3399ff]:0.134046,Sarc_SARC_00130[&!color=#3399ff]:0.086945)[&label="89.3/100",!color=#3399ff]:0.072582)[&label="99.7/100",!color=#3399ff]:0.164307,(((Sdes_comp20901_c0_seq4_fr4[&!color=#3399ff]:3.0E-6,(Sdes_comp20901_c0_seq2_fr4[&!color=#3399ff]:2.0E-6,Sdes_comp20901_c0_seq1_fr6[&!color=#3399ff]:0.037405)[&label="100/100",!color=#3399ff]:0.415999)[&label="0/79",!color=#3399ff]:3.0E-6,((Sdes_comp20901_c0_seq1_fr5[&!color=#3399ff]:0.041564,Sdes_comp20901_c0_seq2_fr6[&!color=#3399ff]:3.0E-6)[&label="100/100",!color=#3399ff]:0.885263,Sdes_comp20901_c0_seq3_fr6[&!color=#3399ff]:2.0E-6)[&label="96.4/92",!color=#3399ff]:0.039329)[&label="99.4/100",!color=#3399ff]:0.120244,('CPERKG00000005905.1'[&!color=#3399ff]:3.0E-6,Nk52_evm40s222[&!color=#3399ff]:2.0E-6)[&label="99.6/100",!color=#3399ff]:0.154647)[&label="12.7/82",!color=#3399ff]:0.024883)[&label="86.1/89",!color=#3399ff]:0.034577,Clim_evm86s157[&!color=#3399ff]:0.207887)[&label="85.2/88",!color=#3399ff]:0.039137,(Pchi_g278[&!color=#3399ff]:0.092438,Pvie_g7571_1-676[&!color=#3399ff]:3.0E-6)[&label="91.8/100",!color=#3399ff]:0.063797)[&label="15.2/78",!color=#3399ff]:0.037844,Cowc_CAOG_04822[&!color=#3399ff]:0.150779)[&label="93.6/87",!color=#3399ff]:0.075241,Patl_g691[&!color=#3399ff]:0.118019)[&label="49.2/78",!color=#3399ff]:0.046536,((((((((Crev_80436[&!color=#3399ff]:0.102245,Pisp_53885[&!color=#3399ff]:0.06183)[&label="76.1/90",!color=#3399ff]:0.013075,Spun_SPPG_00725[&!color=#3399ff]:0.04448)[&label="86.4/92",!color=#3399ff]:0.016603,Ccor_109297[&!color=#3399ff]:0.088938)[&label="0/83",!color=#3399ff]:3.0E-6,'MalawiJak_EC725274.1.p1'[&!color=#3399ff]:0.294719)[&label="0/53",!color=#3399ff]:0.017133,(Rirr_67236[&!color=#3399ff]:0.063665,Mcir_Mucci2_138359[&!color=#3399ff]:0.05548)[&label="87.5/84",!color=#3399ff]:0.015034)[&label="0/62",!color=#3399ff]:3.0E-6,Mver_03108[&!color=#3399ff]:0.073346)[&label="86.1/77",!color=#3399ff]:0.015422,Umar_259486[&!color=#3399ff]:0.023694)[&label="74.7/86",!color=#3399ff]:0.010199,(Pbla_Phybl2_172632[&!color=#3399ff]:0.01535,Rory_11347[&!color=#3399ff]:0.007999)[&label="92.3/100",!color=#3399ff]:0.037783)[&label="81.1/98",!color=#3399ff]:0.036418)[&label="92.6/86",!color=#3399ff]:0.0735,Gpro_59323[&!color=#3399ff]:0.660628)[&label="72.6/94",!color=#3399ff]:0.015307)[&label="65.5/76",!color=#3399ff]:0.021756,(Ttra_AMSG_05730[&!color=#3399ff]:0.13012,'Paramicrosporidium_PJF20092.1'[&!color=#3399ff]:0.36983)[&label="92.2/85",!color=#3399ff]:0.090914)[&label="83.3/73",!color=#3399ff]:0.051478,((Gavo_comp697511_c0_seq1_6_ORF8_130[&!color=#3399ff]:0.14376,'Mantamonas_TRINITY_DN12455_c1_g2_i1.p1'[&!color=#3399ff]:0.072717)[&label="66.8/99",!color=#3399ff]:0.034225,('Nutolong_TRINITY_DN12840_c0_g1_i1|m.39969'[&!color=#3399ff]:0.244032,('Nfow_XP_044567696.1'[&!color=#3399ff]:0.014175,(NGRUM00000100695[&!color=#3399ff]:1.0E-6,Ngru_XP_002672452[&!color=#3399ff]:1.0E-6)[&label="95.8/100",!color=#3399ff]:0.087767)[&label="99.8/100",!color=#3399ff]:0.235027)[&label="90.6/97",!color=#3399ff]:0.081117)[&label="80.5/78",!color=#3399ff]:0.055567)[&label="0/61",!color=#3399ff]:0.008174,(('Acas_BAESF_15425.mRNA.1'[&!color=#3399ff]:1.0E-6,Acas_g3482[&!color=#3399ff]:1.0E-6)[&label="99.8/100",!color=#3399ff]:0.162901,(('Trimastix_TRINITY_DN25969_c3_g8_i1.p1'[&!color=#3399ff]:0.210022,'Clen_g2517.t1'[&!color=#3399ff]:0.334028)[&label="18.8/94",!color=#3399ff]:0.048453,'Pygsuia_Gene.6827'[&!color=#3399ff]:0.350522)[&label="7.2/75",!color=#3399ff]:0.020992)[&label="87/90",!color=#3399ff]:0.044209)[&label="22.8/80",!color=#3399ff]:0.029374,'Diphylleia_TRINITY_DN5780_c0_g1_i1.p1'[&!color=#3399ff]:0.202895)[&label="74.5/96",!color=#3399ff]:0.028539,'Ancyromonas_TRINITY_DN12889_c0_g1_i2.p2'[&!color=#3399ff]:0.361186)[&label="94.2/96",!color=#3399ff,!name="AMT1"]:0.211131,((((((('Nfow_XP_044559917.1'[&!color=#ff0000]:0.083206,(NGRUM00000077616[&!color=#ff0000]:1.0E-6,Ngru_XP_002681700[&!color=#ff0000]:1.0E-6)[&label="66/100",!color=#ff0000]:0.019928)[&label="99.9/100",!color=#ff0000]:0.304896,Ttra_AMSG_07188[&!color=#ff0000]:0.45278)[&label="64.3/67",!color=#ff0000]:0.18133,(Cmer_CMH026C[&!color=#ff0000]:0.27321,((((('Flavobacterium_RZK17851.1'[&!color=#ff0000]:0.18917,(Imul_166770[&!color=#ff0000]:0.716012,'Tther_AMT5_EAR99483.3'[&!color=#ff0000]:0.303047)[&label="100/100",!color=#ff0000]:0.496924)[&label="19.9/69",!color=#ff0000]:0.015026,((Ptet_Q3SE42_Q3SE42[&!color=#ff0000]:0.006952,(Ptet_A0CUV7_A0CUV7[&!color=#ff0000]:1.0E-6,Ptet_A0DN45_A0DN45[&!color=#ff0000]:1.0E-6)[&label="0/83",!color=#ff0000]:2.0E-6)[&label="53.3/99",!color=#ff0000]:0.004679,(Ptet_A0C3G9_A0C3G9[&!color=#ff0000]:0.058633,Ptet_A0BTY5_A0BTY5[&!color=#ff0000]:0.001443)[&label="41.3/76",!color=#ff0000]:0.022658)[&label="99.9/100",!color=#ff0000]:0.214361)[&label="47.7/68",!color=#ff0000]:0.040232,('Tther_AMT2_EAR99108.2'[&!color=#ff0000]:0.100124,Imul_144580[&!color=#ff0000]:0.12693)[&label="91.1/100",!color=#ff0000]:0.092908)[&label="99.2/99",!color=#ff0000]:0.20798,'Otri_Contig17486.0.g100|MT-A70'[&!color=#ff0000]:0.131763)[&label="96.6/100",!color=#ff0000]:0.240193,'Mantamonas_TRINITY_DN12296_c0_g2_i1.p2'[&!color=#ff0000]:0.528466)[&label="1.6/72",!color=#ff0000]:0.040774)[&label="76.7/51",!color=#ff0000]:0.058684)[&label="30.7/30",!color=#ff0000]:0.023811,'Diphylleia_TRINITY_DN6632_c1_g4_i3.p1'[&!color=#ff0000]:0.234117)[&label="81.9/66",!color=#ff0000]:0.058716,(('Acas_BAESF_04852.mRNA.1'[&!color=#ff0000]:1.0E-6,Acas_g8454[&!color=#ff0000]:1.0E-6)[&label="0/85",!color=#ff0000]:3.0E-6,Acas_g17516[&!color=#ff0000]:3.0E-6)[&label="98.8/100",!color=#ff0000]:0.1618)[&label="99.1/98",!color=#ff0000,!name="AMT2/5"]:0.255922,((((((((((((((('Crei_XP_042924202.1'[&!color=#006633]:1.0E-6,'Crei_Cre06.g295600.t1.2'[&!color=#006633]:1.0E-6)[&label="94.2/100",!color=#006633]:0.042584,Vcar_XP_002949262[&!color=#006633]:0.053907)[&label="86.5/100",!color=#006633]:0.034547,'Dsalina_Dusal.0196s00018.1.p'[&!color=#006633]:0.064203)[&label="84.5/100",!color=#006633]:0.054287,Csubellip_13342[&!color=#006633]:0.066447)[&label="81.8/100",!color=#006633]:0.023199,'Clen_g5252.t1'[&!color=#006633]:0.034218)[&label="92/92",!color=#006633]:0.060215,(((((('Atri_evm_27.model.AmTr_v1.0_scaffold00041.95'[&!color=#006633]:0.015225,((((Mpol_Mapoly0036s0127[&!color=#006633]:0.007598,((Penium_pm027226g0010[&!color=#006633]:3.0E-6,(Penium_pm012306g0040[&!color=#006633]:0.216837,Penium_pm000900g0090[&!color=#006633]:0.486684)[&label="0/65",!color=#006633]:3.0E-6)[&label="95.2/87",!color=#006633]:0.058375,('Azfi_s0196.g057266'[&!color=#006633]:3.0E-6,'Sacu_v1.1_s0018.g007527'[&!color=#006633]:0.077817)[&label="86.1/90",!color=#006633]:0.015032)[&label="71.6/85",!color=#006633]:0.007801)[&label="45.9/67",!color=#006633]:0.007656,(Ppat_XP_001779017[&!color=#006633]:0.007619,'Sphfalx0312s0012.1.p'[&!color=#006633]:2.0E-6)[&label="0/89",!color=#006633]:2.0E-6)[&label="79.5/67",!color=#006633]:0.007481,(((Bdis_3g51437[&!color=#006633]:0.340758,Sbic_04g032100[&!color=#006633]:2.0E-6)[&label="0/78",!color=#006633]:3.0E-6,Mgut_mgv1a002262m[&!color=#006633]:0.045574)[&label="80.4/100",!color=#006633]:0.00752,Atha_AT4G10760[&!color=#006633]:0.038835)[&label="92/100",!color=#006633]:0.02311)[&label="43.8/87",!color=#006633]:0.007539,(Acoe_009_00763[&!color=#006633]:3.0E-6,Acoe_037_00229[&!color=#006633]:3.0E-6)[&label="98.5/100",!color=#006633]:0.03817)[&label="0/68",!color=#006633]:2.0E-6)[&label="86/88",!color=#006633]:0.007539,Smoe_XP_002989604[&!color=#006633]:0.015154)[&label="0/39",!color=#006633]:2.0E-6,((Acoe_002_00626[&!color=#006633]:0.111337,(Smus_SM000046S16435[&!color=#006633]:0.007422,(Smus_SM000047S16912[&!color=#006633]:1.0E-6,Smus_SM000267S09857[&!color=#006633]:1.0E-6)[&label="0/66",!color=#006633]:2.0E-6)[&label="99.3/100",!color=#006633]:0.06174)[&label="0/78",!color=#006633]:2.0E-6,Mend_ME000093S10374[&!color=#006633]:0.041195)[&label="74.8/83",!color=#006633]:0.01126)[&label="87/49",!color=#006633]:0.01517,Cbra_g39884[&!color=#006633]:0.023281)[&label="91.7/7",!color=#006633]:0.025974,Kfla_kfl00062_0090[&!color=#006633]:0.022444)[&label="82.5/7",!color=#006633]:0.031902,((Ctob_922861401[&!color=#006633]:0.023508,Ehux_211665[&!color=#006633]:0.039951)[&label="88.1/100",!color=#006633]:0.096781,Penium_pm036650g0010[&!color=#006633]:0.207893)[&label="69/7",!color=#006633]:0.060396)[&label="65.3/30",!color=#006633]:0.041471)[&label="88.8/89",!color=#006633]:0.053573,'Pseudomonadota_MCP4294177.1'[&!color=#006633]:0.368552)[&label="77.2/37",!color=#006633]:0.032644,((((((Emul_000651200[&!color=#006633]:3.0E-6,Emul_000328700[&!color=#006633]:0.410264)[&label="65.9/96",!color=#006633]:0.02401,('Hcali_1.1.c11.g460.i1'[&!color=#006633]:0.010776,Mlei_ML064933a[&!color=#006633]:0.070102)[&label="100/100",!color=#006633]:0.159515)[&label="0/28",!color=#006633]:0.012643,Sman_Smp_146300[&!color=#006633]:0.028062)[&label="88.3/89",!color=#006633]:0.035411,((((((((((Drer_ENSDARG00000012827[&!color=#006633]:0.030942,Hsap_ENSG00000165819_METTL3[&!color=#006633]:2.0E-6)[&label="98.9/100",!color=#006633]:0.055381,Pmar_ENSPMAG00000007910[&!color=#006633]:0.016935)[&label="91.6/98",!color=#006633]:0.031207,((('Apla_oki.11.46.t1'[&!color=#006633]:0.035963,('Cxam_g2696.t1'[&!color=#006633]:0.041533,Rescu_010630-T1[&!color=#006633]:0.024611)[&label="99/100",!color=#006633]:0.085759)[&label="81.8/98",!color=#006633]:0.026787,('Spur_WHL22.643252'[&!color=#006633]:2.0E-6,'Spur_WHL22.643249'[&!color=#006633]:3.0E-6)[&label="97.3/100",!color=#006633]:0.081732)[&label="74.7/93",!color=#006633]:0.022533,(Bbel_152280F[&!color=#006633]:3.0E-6,Bflo_BL19715[&!color=#006633]:0.007686)[&label="99.5/100",!color=#006633]:0.072833)[&label="82/93",!color=#006633]:0.018061)[&label="74/52",!color=#006633]:0.008356,Hrob_P79167[&!color=#006633]:0.032635)[&label="85/49",!color=#006633]:0.017051,(('Obim_v22002161m.p'[&!color=#006633]:0.015829,((Lgig_134083[&!color=#006633]:0.038247,('Sbro_EVM0001249.1'[&!color=#006633]:0.043126,Cgig_10023713[&!color=#006633]:0.012916)[&label="85.7/94",!color=#006633]:0.025285)[&label="75.2/61",!color=#006633]:0.0109,Bglb_005122[&!color=#006633]:0.06065)[&label="0/33",!color=#006633]:3.0E-6)[&label="91.8/79",!color=#006633]:0.034977,(('Ngen_g9591.t1'[&!color=#006633]:2.0E-6,'Ngen_g21808.t1'[&!color=#006633]:3.0E-6)[&label="93.7/100",!color=#006633]:0.043405,'Lan_g23445.t1'[&!color=#006633]:0.074962)[&label="87.1/93",!color=#006633]:0.036969)[&label="86.3/99",!color=#006633]:0.027504)[&label="75.8/37",!color=#006633]:0.009745,(Ctel_192776[&!color=#006633]:0.093169,'Pgot_PG09890.1'[&!color=#006633]:0.090971)[&label="84.7/53",!color=#006633]:0.02992)[&label="75.6/25",!color=#006633]:0.008767,((((((Znev_KDR20261[&!color=#006633]:0.00762,(((((Dpul_EFX87640[&!color=#006633]:3.0E-6,(Dpul_EFX60732[&!color=#006633]:2.0E-6,Dpul_EFX60733[&!color=#006633]:0.043573)[&label="87.1/98",!color=#006633]:0.041492)[&label="86.2/98",!color=#006633]:0.042371,'Phaw_30_tra_m.006875'[&!color=#006633]:0.031345)[&label="0/57",!color=#006633]:3.94E-4,(Tcas_TC009294[&!color=#006633]:0.015312,Amel_GB42237[&!color=#006633]:0.015656)[&label="71.9/96",!color=#006633]:0.007797)[&label="76.2/55",!color=#006633]:0.008687,(Apis_ACYPI000487[&!color=#006633]:0.035982,Bmor_BGIBMGA004373[&!color=#006633]:0.196752)[&label="77.2/72",!color=#006633]:0.013094)[&label="76.6/45",!color=#006633]:0.008266,(((Aaeg_AAEL012156[&!color=#006633]:1.0E-6,Aaeg_AAEL015123[&!color=#006633]:1.0E-6)[&label="0/72",!color=#006633]:1.0E-6,Dmel_FBgn0039139_Ime4[&!color=#006633]:0.015767)[&label="89/100",!color=#006633]:0.017541,Lsal_EMLSAP00000012843[&!color=#006633]:0.054812)[&label="52.3/83",!color=#006633]:0.007277)[&label="0/30",!color=#006633]:2.0E-6)[&label="95.4/98",!color=#006633]:0.02475,(('Lpol_XP_013776038.1'[&!color=#006633]:3.0E-6,(Cscu_CSCU002786-PA[&!color=#006633]:0.005203,(Smim_KFM79549[&!color=#006633]:0.016773,('HalSpi_ScKMIYO_108|arrow.g8153.t1'[&!color=#006633]:0.056055,'Pcau_PCA10530.1'[&!color=#006633]:0.022015)[&label="92/75",!color=#006633]:0.040741)[&label="0/74",!color=#006633]:0.002152)[&label="75.2/73",!color=#006633]:0.01455)[&label="89.1/73",!color=#006633]:0.020575,Smar_007641[&!color=#006633]:0.018698)[&label="77.4/67",!color=#006633]:0.007709)[&label="0/61",!color=#006633]:3.0E-6,Turt_05g03940[&!color=#006633]:0.057533)[&label="87.8/81",!color=#006633]:0.016802,('Bner_KAF6020880.1'[&!color=#006633]:0.03041,Ocar_g2987_t1[&!color=#006633]:0.168828)[&label="93.1/99",!color=#006633]:0.046315)[&label="79.2/12",!color=#006633]:0.007716,('Twilhelma_g5812.t1'[&!color=#006633]:0.009628,Aque_2_1_41873_001[&!color=#006633]:0.060543)[&label="97.1/94",!color=#006633]:0.05777)[&label="0/10",!color=#006633]:2.0E-6,(((Cint_ENSCINP00000028279[&!color=#006633]:0.052867,Odio_GSOIDT00005147001[&!color=#006633]:0.114967)[&label="94.8/100",!color=#006633]:0.076811,Skow_Sakowv30024575m[&!color=#006633]:0.032774)[&label="91.9/92",!color=#006633]:0.045413,'Paus_g11829.t1'[&!color=#006633]:0.056771)[&label="79.4/12",!color=#006633]:0.016284)[&label="90.2/51",!color=#006633]:0.017835)[&label="83/45",!color=#006633]:0.01768,((Avag_GSADVT00009738001[&!color=#006633]:1.0E-6,Avag_GSADVT00036733001[&!color=#006633]:1.0E-6)[&label="98.8/100",!color=#006633]:0.090571,Brapli_BCPLA2HM01015[&!color=#006633]:0.058125)[&label="82.2/96",!color=#006633]:0.026168)[&label="76.7/60",!color=#006633]:0.008125,((((Adig_1823v103360[&!color=#006633]:3.0E-6,(Lcom_7454[&!color=#006633]:0.020441,Scil_6763[&!color=#006633]:0.019105)[&label="100/100",!color=#006633]:0.140284)[&label="90.1/59",!color=#006633]:0.015612,(('Fspp_ffun1.m4.8872.m1'[&!color=#006633]:2.0E-6,'Fspp_ffun1.m4.8873.m1'[&!color=#006633]:2.0E-6)[&label="92.9/100",!color=#006633]:0.007785,'Gasp_gasp1.m3.29115.m1'[&!color=#006633]:2.0E-6)[&label="0/77",!color=#006633]:3.0E-6)[&label="38.5/53",!color=#006633]:0.007745,'Gfas_gfas1.m1.18757.m1'[&!color=#006633]:2.0E-6)[&label="97.9/61",!color=#006633]:0.040264,(('NVEC200_010261_1.1'[&!color=#006633]:0.031506,Aipt_AIPGENE28475[&!color=#006633]:0.068928)[&label="65.2/92",!color=#006633]:0.007373,(((Chemi_TCONS_00047476-protein[&!color=#006633]:0.076177,(Hmag_XP_002165937[&!color=#006633]:2.0E-6,'HydVir_scaffold87.g70.t1'[&!color=#006633]:1.0E-6)[&label="90.6/100",!color=#006633]:0.046241)[&label="98.5/100",!color=#006633]:0.10153,((Smalay_024871-T1[&!color=#006633]:0.060397,'Ccrux_g332.t1'[&!color=#006633]:0.042615)[&label="86.2/100",!color=#006633]:0.031294,Tkit_KII69994[&!color=#006633]:0.181363)[&label="73.3/84",!color=#006633]:0.015693)[&label="78/84",!color=#006633]:0.013417,(('Aala_g2658.t1'[&!color=#006633]:3.0E-6,'Pnai_g26318.t1'[&!color=#006633]:1.133323)[&label="83.3/95",!color=#006633]:0.008006,'Mvir_scaffold50.g11.t1'[&!color=#006633]:0.00747)[&label="98/95",!color=#006633]:0.051023)[&label="95.4/61",!color=#006633]:0.040288)[&label="89.5/58",!color=#006633]:0.024908)[&label="70.9/87",!color=#006633]:0.00787)[&label="0/41",!color=#006633]:2.0E-6,('Pfla_pfl_40v0_9_20150316_1g3902.t1'[&!color=#006633]:0.028612,((((Dpul_EFX64187[&!color=#006633]:0.099052,Dpul_EFX64183[&!color=#006633]:0.054207)[&label="99.9/100",!color=#006633]:0.729007,Sros_PTSG_03395[&!color=#006633]:0.174263)[&label="74.7/100",!color=#006633]:0.040934,(Ocar_g8783_t1[&!color=#006633]:0.256172,Mvib_g6972[&!color=#006633]:0.218121)[&label="36.7/99",!color=#006633]:0.019129)[&label="93.4/99",!color=#006633]:0.094606,'Hmia_MTA70_HUMAN|g1485.t1.p1'[&!color=#006633]:0.183679)[&label="86.5/96",!color=#006633]:0.037103)[&label="72.3/81",!color=#006633]:0.014636)[&label="86.4/91",!color=#006633]:0.025228)[&label="81.4/89",!color=#006633]:0.036911,((Hrob_P68987[&!color=#006633]:0.015061,Hrob_P121421[&!color=#006633]:2.0E-6)[&label="74.7/100",!color=#006633]:0.040533,Hrob_P153237[&!color=#006633]:0.386121)[&label="87.9/99",!color=#006633]:0.091954)[&label="69.1/97",!color=#006633]:0.018759,(((Rirr_40362[&!color=#006633]:0.073986,((Gpro_54167[&!color=#006633]:0.060309,'Pnai_g26319.t1'[&!color=#006633]:0.160119)[&label="81.1/48",!color=#006633]:0.070604,Spun_SPPG_03319[&!color=#006633]:0.127462)[&label="54.6/23",!color=#006633]:0.030405)[&label="62.2/13",!color=#006633]:0.055086,((Umar_217644[&!color=#006633]:0.112119,Avag_GSADVT00038920001[&!color=#006633]:2.311607)[&label="16.8/75",!color=#006633]:0.064512,('Asgard_MCP8720213.1'[&!color=#006633]:0.193487,Scer_SCRT_01181[&!color=#006633]:0.186746)[&label="99.8/86",!color=#006633]:0.312685)[&label="16/72",!color=#006633]:0.050104)[&label="63/16",!color=#006633]:0.044015,Patl_g8791[&!color=#006633]:0.183333)[&label="91.6/58",!color=#006633]:0.085701)[&label="83.8/11",!color=#006633]:0.039028)[&label="83.8/14",!color=#006633]:0.024808,('Apar_Contig_14.g583.t1'[&!color=#006633]:0.264488,('Rigifila_TRINITY_DN10260_c0_g1_i1.p1'[&!color=#006633]:0.114078,'Rigifila_TRINITY_DN10260_c0_g1_i2.p1'[&!color=#006633]:3.0E-6)[&label="99.5/100",!color=#006633]:0.198043)[&label="74.3/58",!color=#006633]:0.027689)[&label="72.2/25",!color=#006633]:0.040373,(Gavo_comp57769_c3_seq1_6_ORF11_688[&!color=#006633]:0.157902,('Cpar_tig00000215_g18552.t1'[&!color=#006633]:2.0E-6,Cpar_1101Contig11652[&!color=#006633]:0.034058)[&label="99.2/100",!color=#006633]:0.130052)[&label="93.5/92",!color=#006633]:0.075319)[&label="88.5/81",!color=#006633]:0.046436,((Imul_132470[&!color=#006633]:0.114774,(Ptet_Q3SE37_Q3SE37[&!color=#006633]:3.0E-6,Ptet_A0DRR5_A0DRR5[&!color=#006633]:1.0E-6)[&label="99.2/100",!color=#006633]:0.142346)[&label="89.8/98",!color=#006633]:0.090367,(((('Acer_g10382.t1'[&!color=#006633]:0.11931,(Smin_005563_t1[&!color=#006633]:3.0E-6,Skaw_221166[&!color=#006633]:0.396414)[&label="99.8/100",!color=#006633]:0.156401)[&label="96.1/100",!color=#006633]:0.09328,Pfal_Q8I6Z2_Q8I6Z2[&!color=#006633]:0.114776)[&label="72.6/79",!color=#006633]:0.030845,(((Vbra_11412[&!color=#006633]:0.137118,Cvel_3436[&!color=#006633]:0.092224)[&label="97.3/100",!color=#006633]:0.088943,Tgon_XP_002371302[&!color=#006633]:0.037402)[&label="63.1/75",!color=#006633]:0.034187,Eten_00004670[&!color=#006633]:0.033455)[&label="88.6/81",!color=#006633]:0.042851)[&label="87.2/99",!color=#006633]:0.041921,'Telonema_P2_TRINITY_DN52795_c0_g1__TRINITY_DN52795_c0_g1_i1__g.23982'[&!color=#006633]:0.179252)[&label="46.2/96",!color=#006633]:0.022684)[&label="38.5/88",!color=#006633]:0.03948)[&label="85.3/97",!color=#006633]:0.045794,(Umay_XP_759136[&!color=#006633]:0.23055,(Ccin_CC1G_14583[&!color=#006633]:0.068279,Cneo_XP_571196[&!color=#006633]:0.320096)[&label="32.2/98",!color=#006633]:0.051158)[&label="62.5/78",!color=#006633]:0.031689)[&label="90.8/100",!color=#006633]:0.095013,'Trimastix_TRINITY_DN21600_c0_g1_i1.p1'[&!color=#006633]:0.251765)[&label="83.8/100",!color=#006633]:0.100128,Spar_SPRG_03347T0[&!color=#006633]:0.497479)[&label="80/98",!color=#006633,!name="METTL3"]:0.078072,(((((((('Crei_XP_042928867.1'[&!color=#66cc00]:1.0E-6,'Crei_Cre01.g050600.t1.1'[&!color=#66cc00]:1.0E-6)[&label="99.8/100",!color=#66cc00]:0.222567,'Dsalina_Dusal.0544s00005.1.p'[&!color=#66cc00]:0.17522)[&label="84.5/100",!color=#66cc00]:0.044681,Csubellip_20697[&!color=#66cc00]:0.185286)[&label="63/99",!color=#66cc00]:0.049249,'Clen_g9067.t1'[&!color=#66cc00]:0.181846)[&label="84.2/99",!color=#66cc00]:0.062661,(Ctob_922858537[&!color=#66cc00]:0.109567,Ehux_449178[&!color=#66cc00]:0.098884)[&label="100/100",!color=#66cc00]:0.258772)[&label="68.9/37",!color=#66cc00]:0.029853,((((((((((((((('Apla_oki.1.113.t1'[&!color=#66cc00]:0.134083,(('Spur_WHL22.335975'[&!color=#66cc00]:0.018228,'Spur_WHL22.433956'[&!color=#66cc00]:1.0E-6)[&label="89.4/100",!color=#66cc00]:0.082869,'Hmia_MET14_HUMAN|g10298.t1.p1'[&!color=#66cc00]:0.239026)[&label="69.6/99",!color=#66cc00]:0.041819)[&label="91.2/99",!color=#66cc00]:0.057587,Skow_Sakowv30046280m[&!color=#66cc00]:0.125889)[&label="69.6/99",!color=#66cc00]:0.077288,Tkit_KII73176[&!color=#66cc00]:0.71835)[&label="0/55",!color=#66cc00]:2.0E-6,((((((Apis_ACYPI004420[&!color=#66cc00]:0.030465,Apis_ACYPI009969[&!color=#66cc00]:0.166796)[&label="97/99",!color=#66cc00]:0.109394,Lsal_EMLSAP00000010793[&!color=#66cc00]:0.184779)[&label="47.5/58",!color=#66cc00]:0.039195,Tcas_TC006811[&!color=#66cc00]:0.024484)[&label="17.6/43",!color=#66cc00]:0.010194,(((Amel_GB56003[&!color=#66cc00]:0.024467,(Dpul_EFX69028[&!color=#66cc00]:0.058516,'Phaw_30_tra_m.004496'[&!color=#66cc00]:0.173039)[&label="90/77",!color=#66cc00]:0.069947)[&label="32.4/51",!color=#66cc00]:0.017117,Znev_KDR18181[&!color=#66cc00]:0.029756)[&label="83.9/64",!color=#66cc00]:0.029355,(Aaeg_AAEL006299[&!color=#66cc00]:0.05551,Dmel_FBgn0032016_Mettl14[&!color=#66cc00]:0.081001)[&label="48.5/63",!color=#66cc00]:0.04339)[&label="32.3/59",!color=#66cc00]:0.016041)[&label="94.2/100",!color=#66cc00]:0.065126,(((('HalSpi_ScKMIYO_436|arrow.g29579.t1'[&!color=#66cc00]:0.069883,('Pcau_PCA25189.1'[&!color=#66cc00]:1.0E-6,'Pcau_PCA25189.2'[&!color=#66cc00]:1.0E-6)[&label="99.6/100",!color=#66cc00]:0.115634)[&label="96.4/100",!color=#66cc00]:0.07755,Smar_002698[&!color=#66cc00]:0.038362)[&label="82.4/100",!color=#66cc00]:0.02511,Turt_31g01200[&!color=#66cc00]:0.094582)[&label="82.1/98",!color=#66cc00]:0.025673,(Bmor_BGIBMGA009097[&!color=#66cc00]:0.209967,Cint_ENSCINP00000003108[&!color=#66cc00]:0.170142)[&label="91.5/90",!color=#66cc00]:0.052707)[&label="74.1/88",!color=#66cc00]:0.01862)[&label="40.3/73",!color=#66cc00]:0.01993,((Smim_KFM81774[&!color=#66cc00]:0.032527,((((Cmil_SINCAMP00000016331[&!color=#66cc00]:0.031675,Hsap_ENSG00000145388_METTL14[&!color=#66cc00]:0.028973)[&label="74.6/100",!color=#66cc00]:0.014936,Drer_ENSDARG00000070278[&!color=#66cc00]:0.044731)[&label="98.7/99",!color=#66cc00]:0.097652,(Bbel_197560F[&!color=#66cc00]:2.0E-6,Bflo_BL22881[&!color=#66cc00]:3.0E-6)[&label="99.9/100",!color=#66cc00]:0.123686)[&label="0/71",!color=#66cc00]:2.0E-6,Cscu_CSCU025177-PA[&!color=#66cc00]:0.554554)[&label="57.1/86",!color=#66cc00]:0.031954)[&label="71/84",!color=#66cc00]:0.018033,'Lpol_XP_013778642.1'[&!color=#66cc00]:0.035562)[&label="86.3/87",!color=#66cc00]:0.034545)[&label="94.3/85",!color=#66cc00]:0.039009)[&label="84.8/72",!color=#66cc00]:0.018395,(((((('Ngen_g4049.t1'[&!color=#66cc00]:2.0E-6,'Ngen_g14341.t1'[&!color=#66cc00]:2.0E-6)[&label="99.6/100",!color=#66cc00]:0.100083,('Lan_g712.t1'[&!color=#66cc00]:0.091989,('Paus_g4418.t1'[&!color=#66cc00]:0.096937,('Bner_KAF6018066.1'[&!color=#66cc00]:3.0E-6,'Bner_KAF6039968.1'[&!color=#66cc00]:2.0E-6)[&label="100/100",!color=#66cc00]:0.169774)[&label="58.3/88",!color=#66cc00]:0.045292)[&label="68.3/21",!color=#66cc00]:0.013681)[&label="17.2/24",!color=#66cc00]:0.015428,(Ctel_218111[&!color=#66cc00]:0.097636,(Sman_Smp_172190[&!color=#66cc00]:0.060261,Emul_000931900[&!color=#66cc00]:0.220993)[&label="98.2/100",!color=#66cc00]:0.129976)[&label="84.8/88",!color=#66cc00]:0.037722)[&label="52.9/85",!color=#66cc00]:0.015541,Hrob_P164465[&!color=#66cc00]:0.279483)[&label="80.8/98",!color=#66cc00]:0.031469,(((Bglb_001994[&!color=#66cc00]:0.099661,'Obim_v22000451m.p'[&!color=#66cc00]:0.096614)[&label="14.7/89",!color=#66cc00]:0.017985,Cgig_10004371[&!color=#66cc00]:0.126936)[&label="76.7/100",!color=#66cc00]:0.03545,'Sbro_EVM0013897.1'[&!color=#66cc00]:0.089073)[&label="91.7/100",!color=#66cc00]:0.043191)[&label="91.5/100",!color=#66cc00]:0.043634,'Pgot_PG10064.1'[&!color=#66cc00]:0.140623)[&label="64.7/97",!color=#66cc00]:0.013561)[&label="97.8/83",!color=#66cc00]:0.073429,(Avag_GSADVT00015545001[&!color=#66cc00]:0.208026,Brapli_BCPLA2HM10268[&!color=#66cc00]:0.195066)[&label="81.4/97",!color=#66cc00]:0.04645)[&label="74.4/85",!color=#66cc00]:0.017253,Odio_GSOIDT00005026001[&!color=#66cc00]:0.422065)[&label="77.2/87",!color=#66cc00]:0.019931,'Pnai_g9239.t1'[&!color=#66cc00]:0.456356)[&label="77.2/86",!color=#66cc00]:0.025565,'Djap_g848.t1'[&!color=#66cc00]:0.883659)[&label="45.3/94",!color=#66cc00]:0.012744,(((Adig_9457v106363[&!color=#66cc00]:0.032932,('Fspp_ffun1.m4.830.m1'[&!color=#66cc00]:0.007807,('Gfas_gfas1.m1.77.m1'[&!color=#66cc00]:0.007778,'Gasp_gasp1.m3.13028.m1'[&!color=#66cc00]:0.007786)[&label="0/84",!color=#66cc00]:2.0E-6)[&label="75.6/84",!color=#66cc00]:0.010706)[&label="98.7/100",!color=#66cc00]:0.083119,(Aipt_AIPGENE8025[&!color=#66cc00]:0.049351,'NVEC200_002589_1.1'[&!color=#66cc00]:0.039967)[&label="80.7/100",!color=#66cc00]:0.015988)[&label="91.4/100",!color=#66cc00]:0.034793,(((((('Aurelia_Seg114.10'[&!color=#66cc00]:1.0E-6,'Aurelia_Seg6120.1'[&!color=#66cc00]:1.0E-6)[&label="99.4/100",!color=#66cc00]:0.075231,Smalay_022648-T1[&!color=#66cc00]:0.023435)[&label="75.1/100",!color=#66cc00]:0.018631,Rescu_009613-T1[&!color=#66cc00]:0.042462)[&label="81.8/100",!color=#66cc00]:0.041182,((Hmag_XP_002166979[&!color=#66cc00]:0.019629,'HydVir_scaffold28.g80.t1'[&!color=#66cc00]:0.004066)[&label="91.2/100",!color=#66cc00]:0.041691,Chemi_TCONS_00048544-protein[&!color=#66cc00]:0.128848)[&label="96.6/100",!color=#66cc00]:0.073026)[&label="81.4/99",!color=#66cc00]:0.018928,('Ccrux_g1378.t1'[&!color=#66cc00]:0.146516,'Mvir_scaffold14.g9.t1'[&!color=#66cc00]:0.049997)[&label="85.7/98",!color=#66cc00]:0.019848)[&label="86.2/97",!color=#66cc00]:0.021913,(Aque_2_1_19267_001[&!color=#66cc00]:0.124106,('Twilhelma_g8541.t1'[&!color=#66cc00]:1.0E-6,'Twilhelma_g10235.t1'[&!color=#66cc00]:0.007839)[&label="99.8/100",!color=#66cc00]:0.172736)[&label="95.7/99",!color=#66cc00]:0.095986)[&label="96.3/99",!color=#66cc00]:0.075871)[&label="86.7/97",!color=#66cc00]:0.031477)[&label="91.5/99",!color=#66cc00]:0.053406,(Lcom_56912[&!color=#66cc00]:0.064155,Scil_64209[&!color=#66cc00]:0.077988)[&label="100/100",!color=#66cc00]:0.306152)[&label="20.3/98",!color=#66cc00]:0.010411,Scer_SCRT_05356[&!color=#66cc00]:1.507442)[&label="11.8/20",!color=#66cc00]:0.016442,(('Hcali_1.1.c2.g1286.i1'[&!color=#66cc00]:3.0E-6,Pbac_3471993[&!color=#66cc00]:0.011886)[&label="99.1/100",!color=#66cc00]:0.179605,('Apar_Contig_2.g1373.t1'[&!color=#66cc00]:0.514354,Sros_PTSG_04805[&!color=#66cc00]:0.479608)[&label="90/96",!color=#66cc00]:0.107786)[&label="49/75",!color=#66cc00]:0.069831)[&label="95.4/90",!color=#66cc00]:0.106537,((Spun_SPPG_06562[&!color=#66cc00]:0.23905,(((Ccin_CC1G_11190[&!color=#66cc00]:0.176515,Umay_XP_758552[&!color=#66cc00]:0.341017)[&label="83.8/100",!color=#66cc00]:0.05865,Cneo_XP_572804[&!color=#66cc00]:0.394155)[&label="94/100",!color=#66cc00]:0.177339,Gpro_222853[&!color=#66cc00]:0.436137)[&label="79/68",!color=#66cc00]:0.098101)[&label="0/5",!color=#66cc00]:0.036716,Patl_g3622[&!color=#66cc00]:0.30931)[&label="93.2/91",!color=#66cc00]:0.105714)[&label="82.3/84",!color=#66cc00]:0.037322,(Rirr_336453[&!color=#66cc00]:0.063975,'Rigifila_TRINITY_DN8915_c0_g1_i1.p1'[&!color=#66cc00]:0.49257)[&label="80.3/72",!color=#66cc00]:0.052232)[&label="85.6/66",!color=#66cc00]:0.025646)[&label="55.8/4",!color=#66cc00]:0.013795,((((((('Atri_evm_27.model.AmTr_v1.0_scaffold00029.347'[&!color=#66cc00]:3.0E-6,(Acoe_013_00273[&!color=#66cc00]:0.060336,(((Penium_pm046176g0010[&!color=#66cc00]:0.225233,Penium_pm024151g0010[&!color=#66cc00]:2.0E-6)[&label="96/93",!color=#66cc00]:0.300717,(Atha_AT4G09980[&!color=#66cc00]:0.045703,Mgut_mgv1a000536m[&!color=#66cc00]:0.043187)[&label="75/94",!color=#66cc00]:0.010033)[&label="71.8/57",!color=#66cc00]:0.009638,((Bdis_1g75210[&!color=#66cc00]:0.036189,Sbic_01g047070[&!color=#66cc00]:0.024706)[&label="80.2/99",!color=#66cc00]:0.016199,Bdis_3g27790[&!color=#66cc00]:0.028342)[&label="96.3/100",!color=#66cc00]:0.047877)[&label="78.5/57",!color=#66cc00]:0.017195)[&label="85.7/55",!color=#66cc00]:0.044843)[&label="99.9/94",!color=#66cc00]:0.123592,('Azfi_s0020.g015492'[&!color=#66cc00]:0.010854,'Sacu_v1.1_s0199.g025574'[&!color=#66cc00]:0.02012)[&label="95.3/100",!color=#66cc00]:0.051188)[&label="85.8/90",!color=#66cc00]:0.035874,(Mpol_Mapoly0005s0162[&!color=#66cc00]:2.0E-6,'Sphfalx0030s0034.1.p'[&!color=#66cc00]:0.047116)[&label="95.3/100",!color=#66cc00]:0.044328)[&label="0/46",!color=#66cc00]:3.0E-6,Cbra_g46618[&!color=#66cc00]:0.0682)[&label="77.9/90",!color=#66cc00]:0.038707,(((Smus_SM000037S13575[&!color=#66cc00]:0.058201,Smus_SM000130S27122[&!color=#66cc00]:1.0E-6)[&label="0/97",!color=#66cc00]:1.52E-4,Smus_SM000098S25145[&!color=#66cc00]:0.01564)[&label="93.8/100",!color=#66cc00]:0.095586,Cbra_g46623[&!color=#66cc00]:0.106175)[&label="87.9/99",!color=#66cc00]:0.061153)[&label="84.3/94",!color=#66cc00]:0.033428,Kfla_kfl00354_0060[&!color=#66cc00]:0.146743)[&label="87/97",!color=#66cc00]:0.04801,Mend_ME000155S01389[&!color=#66cc00]:0.124003)[&label="95.4/100",!color=#66cc00]:0.071831)[&label="85.4/66",!color=#66cc00]:0.07781,(Gavo_comp123584_c0_seq1_6_ORF1_346[&!color=#66cc00]:0.319654,(((('Cpar_tig00000655_g2886.t1'[&!color=#66cc00]:2.0E-6,Cpar_12830Contig6783[&!color=#66cc00]:0.008498)[&label="100/100",!color=#66cc00]:0.379203,'Archaeon_MCQ2816291.1'[&!color=#66cc00]:0.238222)[&label="61.5/51",!color=#66cc00]:0.055202,((Imul_031620[&!color=#66cc00]:0.14744,((Ptet_Q3SE47_Q3SE47[&!color=#66cc00]:0.026391,Ptet_Q3SE46_Q3SE46[&!color=#66cc00]:0.011795)[&label="62.3/90",!color=#66cc00]:0.080193,Spar_SPRG_10355T0[&!color=#66cc00]:0.982438)[&label="79.2/79",!color=#66cc00]:0.162882)[&label="96.4/80",!color=#66cc00]:0.147314,(((((Pfal_Q8I567_Q8I567[&!color=#66cc00]:0.230071,'Trimastix_TRINITY_DN25078_c0_g3_i3.p2'[&!color=#66cc00]:0.475522)[&label="6.3/93",!color=#66cc00]:0.054743,(Tgon_XP_002365577[&!color=#66cc00]:0.166445,Vbra_21923[&!color=#66cc00]:0.28428)[&label="83.6/28",!color=#66cc00]:0.105015)[&label="40.4/28",!color=#66cc00]:0.040679,Eten_00000805[&!color=#66cc00]:0.276848)[&label="88/89",!color=#66cc00]:0.080613,Cvel_13802[&!color=#66cc00]:0.277488)[&label="83.6/90",!color=#66cc00]:0.086382,('Acer_g17892.t1'[&!color=#66cc00]:0.24865,Smin_027718_t1[&!color=#66cc00]:0.31254)[&label="60/94",!color=#66cc00]:0.072971)[&label="82.9/80",!color=#66cc00]:0.059057)[&label="94.5/97",!color=#66cc00]:0.104053)[&label="76.3/32",!color=#66cc00]:0.024482,Mvib_g986[&!color=#66cc00]:0.451612)[&label="79.7/81",!color=#66cc00]:0.049474)[&label="32/44",!color=#66cc00]:0.027881)[&label="100/100",!color=#66cc00,!name="METTL14"]:0.604629)[&label="99.4/100"]:0.326049)[&label="90.8/95"]:0.16077,((Tvag_XP_001580474[&!color=#6666ff]:0.103653,Tvag_XP_001579626[&!color=#6666ff]:0.029276)[&label="99/100",!color=#6666ff]:0.390577,(Tvag_XP_001325789[&!color=#6666ff]:0.800618,Tvag_XP_001299862[&!color=#6666ff]:0.137261)[&label="90/100",!color=#6666ff]:0.216846)[&label="99.5/100",!color=#6666ff]:0.367929)[&label="78.2/61"]:0.098489)[&label="63.5/61"]:0.183836)[&label="99.7/100",!color=#000099,!name="AMT6/7"]:0.619584)[&label="68.4/90",!color=#000099]:0.117271)[&label="85.6/93",!color=#000099]:0.11721,'Trimastix_TRINITY_DN25403_c3_g1_i1.p1'[&!color=#000099]:1.005929)[&label="52/75",!color=#000099]:0.035819)[&label="86.8/46",!color=#000099]:0.079933,(('Acas_BAESF_07975.mRNA.1'[&!color=#000099]:1.0E-6,Acas_g7085[&!color=#000099]:1.0E-6)[&label="100/100",!color=#000099]:0.370647,('Diphylleia_TRINITY_DN3191_c0_g1_i3.p1'[&!color=#000099]:0.754091,Gavo_comp45755_c0_seq1_6_ORF14_328[&!color=#000099]:0.575998)[&label="81.1/92",!color=#000099]:0.133375)[&label="60.6/72",!color=#000099]:0.079092)[&label="88.7/78",!color=#000099]:0.066824,((((('Acas_BAESF_02539.mRNA.1'[&!color=#000099]:1.0E-6,'Acas_BAESF_02557.mRNA.1'[&!color=#000099]:1.0E-6)[&label="0/69",!color=#000099]:1.0E-6,Acas_g6832[&!color=#000099]:0.007759)[&label="99.8/100",!color=#000099]:0.386011,Clim_evm3s199[&!color=#000099]:0.759108)[&label="52.3/87",!color=#000099]:0.07326,((((Otau_9835254[&!color=#000099]:0.106828,Mpus_9684630[&!color=#000099]:0.320206)[&label="97.9/100",!color=#000099]:0.326419,(((('Crei_XP_042920384.1'[&!color=#000099]:2.0E-6,'Crei_Cre10.g452300.t1.2'[&!color=#000099]:2.0E-6)[&label="91.4/100",!color=#000099]:0.092349,Vcar_XP_002957375[&!color=#000099]:0.203814)[&label="99.9/100",!color=#000099]:0.527385,(('ChA99_scaffold14.g1347.t1'[&!color=#000099]:0.281901,Cvar_EFN56702[&!color=#000099]:0.128146)[&label="96.3/100",!color=#000099]:0.177437,Csubellip_20594[&!color=#000099]:0.325152)[&label="43.4/100",!color=#000099]:0.064508)[&label="64/97",!color=#000099]:0.161769,'Clen_g2301.t1'[&!color=#000099]:0.753261)[&label="74.1/100",!color=#000099]:0.128459)[&label="96.7/100",!color=#000099]:0.311715,Ccor_87489[&!color=#000099]:0.698915)[&label="38.9/93",!color=#000099]:0.081079,('Otri_Contig1237.1.g126|MT-A70'[&!color=#000099]:0.577666,((Ptet_A0E887_A0E887[&!color=#000099]:0.061351,Ptet_A0BUU1_A0BUU1[&!color=#000099]:0.045668)[&label="100/100",!color=#000099]:0.40548,((Ptet_A0CVA8_A0CVA8[&!color=#000099]:0.470798,'Tther_AMT6_EAR90090.2'[&!color=#000099]:0.183393)[&label="58.1/100",!color=#000099]:0.126154,'Tther_AMT7_EAS04360.2'[&!color=#000099]:0.504471)[&label="49.1/99",!color=#000099]:0.037595)[&label="98.4/100",!color=#000099]:0.376387)[&label="97/100",!color=#000099]:0.315809)[&label="82.6/93",!color=#000099]:0.09754)[&label="89.4/85",!color=#000099]:0.095982,('Nfow_XP_044569262.1'[&!color=#000099]:0.092258,NGRUM00000048833[&!color=#000099]:0.221762)[&label="100/100",!color=#000099]:0.763422)[&label="59.1/71",!color=#000099]:0.01871)[&label="88.2/86",!color=#000099]:0.077593,Ttra_AMSG_10222[&!color=#000099]:0.810404)[&label="44.4/91",!color=#000099]:0.051469,('Ancyromonas_TRINITY_DN5221_c0_g2_i1.p1'[&!color=#000099]:0.665338,'Nutolong_TRINITY_DN8434_c0_g1_i1|m.2668'[&!color=#000099]:0.225133)[&label="94.7/100",!color=#000099]:0.325456)[&label="92.3/100",!color=#000099]:0.200974,Rfil_14432_2c[&!color=#000099]:0.957577)[&label="8.3/58",!color=#000099]:0.067515,'Mantamonas_TRINITY_DN11948_c7_g4_i1.p1'[&!color=#000099]:0.621773)[&label="88.7/100",!color=#000099]:0.220813,'Pygsuia_Gene.16241'[&!color=#000099]:0.721551)[&label="94.7/100",!color=#000099]:0.273902)[&label="29.3/91",!color=#000099]:0.125918);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=535;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Names";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
