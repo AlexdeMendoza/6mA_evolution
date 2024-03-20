@@ -7,7 +7,10 @@
  This folder contains the original fasta files, alignments and IQ-TREE2 phylogeny for the MT-A70 family across eukaryotes.
  
 ## RepeatMaskerFiles
- This folder contains the RepeatModeler2 repeat libraries and RepeatMasker gff files generated for this study for several eukaryotes. 
+ This folder contains the RepeatModeler2 repeat libraries and RepeatMasker gff files generated for this study for several eukaryotes.
+ 
+## Gene_beds
+ This folder contains the methylated gene bed files used for all the species in the study. 
  
 ## RNAseq_abundance_files
  This folder contains the Stringtie transcript abundance outputs for publicly available RNA-seq datasets re-analysed in this study. 
@@ -16,8 +19,7 @@
  This folder contains the scripts used to call modified bases with Nanopore data, and the analysis of these methylomes in R.
 
 ## Genomes
- 
-The new assemblies generated for *Naegleria gruberi* and *Chromosphaera perkinsii* used in this study, with annotation files. 
+ The new assemblies generated for *Naegleria gruberi* and *Chromosphaera perkinsii* used in this study, with annotation files. 
  
 If you use any of this material, reference the original manuscript: 
 
