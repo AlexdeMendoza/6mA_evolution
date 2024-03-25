@@ -322,77 +322,6 @@ write.table(genes_m6A, file = "Cfrag_Multinucleated_genes_6mA.tsv",
 
 
 # ------------------------------------------------------------------------------
-# Calculate number and percentage of methylated As and ATs
-# ------------------------------------------------------------------------------
-
-
-# Create a vector with the number of adenines with a coverage >=10x of all species
-Adenine10cov <- c(23365911, 90853275, 10895968, 18220779, 109724, 11500215, 17433674, 9385095, 37942246, 68793, 5005691, 170572, 2380137, 13856641, 32187353, 23423770, 18367077, 65745344)#awk '$10 >= 10' Ngru.R9_6mA.methyl.context.bed > Ngru.AT.Cov.bed
-
-# Create a vector with the number of adenines with a coverage >=10x of all species and that are methylated at lest 10% of the times of all species
-MethyAdenine10cov10perc <- c(944769, 2827469, 186850, 1059771, 2218, 380685, 454255, 192603, 22183, 133, 56598, 4642, 1670, 221, 72974, 21894, 13737, 2632920)#awk '$10 >= 10 && $11 >= 10' Ngru.R9_6mA.methyl.context.bed > Ngru.AT.CovMeth.bed
-
-# Create a vector with the number of ATs with a coverage >=10x of all species
-AT10cov <- c(7185587, 20046251, 3665666, 4662423, 28652, 2827680, 3217753, 3242009, 5332264, 13571, 888790, 21886, 485880, 3051863, 7884208, 7518561, 4244237, 11732126)#awk '$NF ~ /[ATCG]AT[ATCG]/ && $10 >= 10' Ngru.R9_6mA.methyl.context.bed > Ngru.AT.Cov.bed
-
-# Create a vector with the number of ATs with a coverage >=10x of all species and that are methylated at lest 10% of the times of all species
-MethAT10cov10perc <- c(554769, 1366197, 64270, 632364, 856, 209721, 319880, 11333, 15954, 66, 24988, 1790, 230, 29, 45515, 14533, 9669, 1233568)#awk '$NF ~ /[ATCG]AT[ATCG]/ && $10 >= 10 && $11 >= 10' Ngru.R9_6mA.methyl.context.bed > Ngru.AT.CovMeth.bed
-
-# Calculate the percentage of methylated As
-PercentageMethylA <- c(100*(MethyAdenine10cov10perc/Adenine10cov))
-
-# Calculate the percentage of methylated ATs
-PercentageMethylAT <- c(100*(MethAT10cov10perc/AT10cov))
-
-# Create a dataframe with this values
-PercentageMethylatedAdenines <- data.frame(Species_order, Adenine10cov, MethyAdenine10cov10perc, AT10cov, MethAT10cov10perc, PercentageMethylA, PercentageMethylAT)
-
-
-#Create bar plots with the percentage of methylated A and ATs
-Percentage_Methy_A_bar_chart <- ggplot(PercentageMethylatedAdenines, aes(x = Species_order, y = PercentageMethylA, fill = "#66c2a5")) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.8)) +
-  labs(title = "Percentage of Methylated Adenines", x= 'Species', y = "%") +
-  geom_text(aes(label = Adenine10cov), position = position_stack(vjust = 0.5), color = "black", size = 2) +
-  scale_fill_manual(values = "#66c2a5")  +
-  theme_light() +
-  guides(fill = "none")
-Percentage_Methy_AT_bar_chart <- ggplot(PercentageMethylatedAdenines, aes(x = Species_order, y = PercentageMethylAT, fill = "#66c2a5")) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.8)) +
-  labs(title = "Percentage of Methylated ApT", x= 'Species', y = "%") +
-  geom_text(aes(label = AT10cov), position = position_stack(vjust = 0.5), color = "black", size = 2) +
-  scale_fill_manual(values = "#66c2a5")  +
-  theme_light() +
-  guides(fill = "none")
-combo_plots <- plot_grid(Percentage_Methy_A_bar_chart, Percentage_Methy_AT_bar_chart, ncol = 1 )
-
-
-#Prepare the dataframe for the plot generation
-Number_of_methylated_sites_data_long <- gather(PercentageMethylatedAdenines, key = "SiteStatus", value = "NumberOfSites",
-                                               Adenine10cov, MethyAdenine10cov10perc)
-Number_of_methylated_ATsites_data_long <- gather(PercentageMethylatedAdenines, key = "SiteStatus", value = "NumberOfSites",
-                                                 AT10cov, MethAT10cov10perc)
-
-#Create bar plots with the number of methylated A and ATs
-Number_Methy_A_bar_chart <- ggplot(Number_of_methylated_sites_data_long, aes(x = Species_order, y = NumberOfSites, fill = reorder(SiteStatus, -NumberOfSites))) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.8)) +
-  labs(title = "Number of Adenines and Methylated Adenines", x = 'Species', y = "log(Number of Adenenines)") +
-  scale_fill_manual(values = c("#fc8d62", "#66c2a5"), name = "Site Status",
-                    breaks = c('Adenine10cov', 'MethyAdenine10cov10perc'),
-                    labels = c("Number of Adenines", "Number of Methylated Adenines")) +
-  theme_light() +
-  scale_y_log10()
-Number_Methy_AT_bar_chart <- ggplot(Number_of_methylated_ATsites_data_long, aes(x = Species_order, y = NumberOfSites, fill = reorder(SiteStatus, -NumberOfSites))) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.8)) +
-  labs(title = "Number of ApTs and Methylated ApTs", x = 'Species', y = "log(Number of ApTs)") +
-  scale_fill_manual(values = c("#fc8d62", "#66c2a5"), name = "Site Status",
-                    breaks = c('AT10cov', 'MethAT10cov10perc'),
-                    labels = c("Number of ApTs", "Number of Methylated ApTs")) +
-  theme_light()  +
-  scale_y_log10()
-combo_plots <- plot_grid(bar_chartANumber, bar_chartATNumber, ncol = 1 )
-
-
-# ------------------------------------------------------------------------------
 # Calculate 6mA percentages in different nucleotide context
 # ------------------------------------------------------------------------------
 
@@ -645,65 +574,6 @@ write.table(h2t_u, file = "Cfrag_Multinucleated.head_to_tail.unmethyl.bed",quote
 ##
 
 
-################################################################################
-### CpG strand correlation plot
-################################################################################
-
-
-# Get the % of CG
-CG <- df %>% filter(grepl(V17, pattern = "[ATCG]CG[ATCG]"))
-
-# Extract CG information from genomic data
-CG_dat <- CG %>% dplyr::rename(chr = V1, start = V2, end = V3, strand = V6, mC_perc = V11,
-                                C_reads = V13) %>% mutate(CT_reads = V12 + C_reads)
-
-# Calculate correlation between + and - strands 
-CG_dinuc <- CG_dat %>% mutate(locus = if_else(strand == "+", paste0(chr,":",start+1),paste0(chr,":",start) )) %>%
-  dplyr::select(locus, strand, mC_perc, CT_reads)
-
-# Filter positions with 10x coverage in both strands
-CG_dinuc_watson <- CpG_dinuc %>% filter(CT_reads >= 10, strand == "+")
-CG_dinuc_crick <- CpG_dinuc %>% filter(CT_reads >= 10, strand == "-")
-
-# Take only those present in both data frames (10x coverage in both strands)
-CG_dinuc <- inner_join(CG_dinuc_watson, CG_dinuc_crick, by = "locus")
-
-# Calculate Pearson and Spearman correlation
-
-CG_pearson <- cor(CG_dinuc$mC_perc.x,CG_dinuc$mC_perc.y, method = "pearson")
-
-CG_spearman <- cor(CG_dinuc$mC_perc.x,CG_dinuc$mC_perc.y, method = "spearman")
-
-# Compute the correlation values for all species
-Cfra_CGCorrelation <- c(name, pearson, spearman )#Repeat with the rest of species
-
-
-# Prepare a matrix with all species values
-CG_Pearson_Correlation <- matrix(
-  c(
-    Cfra_CGCorrelation[1], Cfra_CGCorrelation[2],
-    Aapp_CGCorrelation[1], Aapp_CGCorrelation[2],
-    # ... Repeat for the rest of species
-    Tvag_CGCorrelation[1], Tvag_CGCorrelation[2]
-  ),
-  ncol = 2,
-  byrow = TRUE
-)
-
-# Prepare the dataframe for plot generation
-CG_Pearson_Correlation_DF <- as.data.frame(CG_Pearson_Correlation)
-colnames(CG_Pearson_Correlation_DF) <- c("Species", "Pearson")
-CG_Pearson_Correlation_DF_long <- tidyr::gather(CG_Pearson_Correlation_DF, key = "variable", value = "value", -Species)
-CG_Pearson_Correlation_DF_long$value <- as.numeric(CG_Pearson_Correlation_DF_long$value)
-
-# Generate the bar chart with correlation values of each species
-CG_Pearson_Correlation_Bar_Chart<- ggplot(CG_Pearson_Correlation_DF_long, aes(x = reorder(Species, match(Species, Species_order)), y = value, fill = variable)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9)) +
-  labs(title = "CpG symmetric methylation correlation", x = 'Species', y = "Pearson correlation value", fill = "Variable") +
-  theme_light() +
-  guides(fill = "none") +
-  scale_y_continuous(limits = c(min(df_longA$value), max(df_longA$value)))
-
 
 ################################################################################
 ### Mean global methylation levels across genomic features
@@ -818,7 +688,7 @@ write.csv(MeanMethylationDF, file = 'MeanMeathylationValues.csv', col.names = FA
           row.names = FALSE, sep = "\t")
 
 ################################################################################
-###AT observed vs expected
+### AT observed vs expected
 ################################################################################
 
 
@@ -948,114 +818,6 @@ Number_Gene_Methylation_Plot_stages_gg <- ggplot(Number_of_genes_data_long_stage
   theme_minimal()
 
 
-# ------------------------------------------------------------------------------
-# Differentially expressed genes in different cell stages
-# ------------------------------------------------------------------------------
-
-
-
-#########Unix command line code to produce an abundance transcriptomic file with counts from raw RNA-seq fastq file#########
-#
-##Run gffread to create a mRNA.fasta file
-#gffread -w Species.mRNA.fasta -g Genome.fasta Species.annotation.gff3
-#
-##Run kallisto to generate index ile
-#kallisto index --index=Species.index Species.mRNA.fasta
-#
-##Run kallisto to create abundance files with counts numbers
-#kallisto quant -i Species.index -o Species.counts.tsv Species_RNA_seq_1.fastq Species_RNA_seq_2.fastq
-#
-################################################################################
-
-
-# Read and reformat RNA-seq file with counts to make a matrix
-Counts <- fread("CfragMultinucleatedAmoeba.counts.tsv")
-Counts <- tpm[grep(Counts$target_id, pattern = "\\.1"),]
-
-# Remove de different isoforms choosing the elements that are longer than 10 characters
-Counts <- Counts[nchar(Counts$target_id) <= 10, ] 
-Counts$gene_id <- substring(Counts$target_id, 1, nchar(Counts$target_id) - 2)
-
-Counts_mtx <- Counts %>% dplyr::select(-gene_id, -target_id)
-rownames(Counts_mtx) <- Counts$gene_id
-
-# Filter genes that are not expressed
-allZero <- rowSums(Counts_mtx==0)==ncol(Counts_mtx)
-gene_counts <- Counts_mtx[!allZero,]
-rownames(gene_counts ) <- rownames(Counts_mtx)[!allZero] %>% as.character()
-gene_counts <- round(gene_counts, digits = 0)
-
-# Plot the sample correlation to see if replicates make sense
-d.correlation <- as.dist(1 - cor(gene_counts,method=c("spearman")))
-fit <- hclust(d.correlation, method="complete")
-pdf("Cfrag_RNAseq_clustering_byDEgenes.pdf", height = 5)
-plot(fit) # display dendogram
-dev.off()
-
-
-# Generate the experimental conditions data frame
-coldata <- data.frame(sample=colnames(gene_counts)) %>%
-  mutate(condition = ifelse(grepl("Multinucleated", sample), "Multinucleated",
-                            ifelse(grepl("Amoeba", sample), "Amoeba","Broad"))) 
-
-# Create the DEseq2 object
-Dds_all <- DESeqDataSetFromMatrix(countData = gene_counts,
-                                  colData = coldata,
-                                  design = ~ condition)
-rownames(Dds_all) <- rownames(gene_counts)
-Dds_all <- estimateSizeFactors(Dds_all)
-
-# Filter very lowly expressed genes
-Dds_all <- Dds_all[rowSums(Counts(Dds_all)) >= 10,]
-Dds_all <- Dds_all[rowSums(Counts(Dds_all)==0) <= ncol(Counts(Dds_all))*0.5,]
-
-# Function to get differentially expressed genes
-Get_diff_genes <- function(cond1, cond2, df_deq = Dds_all, fdrlevel.de = 0.05){
-  dds <- df_deq
-  
-  dds <- dds[, dds$condition == cond1 | 
-               dds$condition == cond2 ]
-  dds$condition <- droplevels(dds$condition)
-  
-  # Filter low expressed genes (at least 10 counts in total, or more than 0 in at least 50% of the samples)
-  dds <- dds[rowSums(Counts(dds)) >= 10,]
-  dds_good <- dds[rowSums(Counts(dds)==0) <= ncol(Counts(dds))*0.5,]
-  
-  dds_good <- estimateSizeFactors(dds_good)
-  
-  rowData(dds_good)$control_expr <- rowMeans(Counts(dds_good, normalize = TRUE)[,dds_good$condition == cond1])
-  rowData(dds_good)$condition_expr <- rowMeans(Counts(dds_good, normalize = TRUE)[,dds_good$condition == cond2])
-  
-  # Perform diffential expression analysis
-  dds_good <- DESeq(dds_good)
-  res_good <- results(dds_good)
-  
-  res_good$control_expr <- rowData(dds_good)$control_expr
-  res_good$condition_expr <- rowData(dds_good)$condition_expr
-  
-  dds_good <- dds_good[!is.na(res_good$padj)]
-  res_good <- res_good %>% na.omit()
-  
-  res_good <- res_good[res_good$padj < fdrlevel.de,]
-  res_good$status <- ifelse(res_good$control_expr < res_good$condition_expr,"upregulated","downregulated")
-  res_good$comparison <- paste0(cond1,"_vs_",cond2)
-  
-  return(res_good)
-  
-}
-
-# Perform the differential expresiion analysis
-First_deseq <- Get_diff_genes(cond1 = "Multinucleated", cond2 = "Amoeba")
-
-# Create a table with the information about the gene expression changes
-First_deseq$status %>% table()
-
-# Convert results to a dataframe
-Results_MultinucleatedvsAmoeba <- as.data.frame(First_deseq)
-
-# Save results to a text file
-write.table(Results_MultinucleatedvsAmoeba, file = "DESeq_resultsCfragMvsA.txt", sep = "\t", row.names = TRUE)
-
 
 # ------------------------------------------------------------------------------
 # Differentially ApT mehtylated genes in different cell stages
@@ -1078,9 +840,9 @@ Cfrag_MultVsAmoeba$delta_6mAfraction_Multi_vs_Amoeba <- Cfrag_MultVsAmoeba$mApT.
 Cfrag_tpm_matrix <- cbind(fread("abundanceM1.tsv") %>% .[,c(1,5)] %>% dplyr::rename("Multinucleated1" = tpm, gene_id = "target_id") ,
                           fread("abundanceM2.tsv") %>% .[,5] %>% dplyr::rename("Multinucleated2" = tpm),
                           fread("abundanceM3.tsv") %>% .[,5] %>% dplyr::rename("Multinucleated3" = tpm),
-                          fread("abundanceM1.tsv") %>% .[,5] %>% dplyr::rename("Amoeba1" = tpm),
-                          fread("abundanceM2.tsv") %>% .[,5] %>% dplyr::rename("Amoeba2" = tpm),
-                          fread("abundanceM3.tsv") %>% .[,5] %>% dplyr::rename("Amoeba3" = tpm))
+                          fread("abundanceA1.tsv") %>% .[,5] %>% dplyr::rename("Amoeba1" = tpm),
+                          fread("abundanceA2.tsv") %>% .[,5] %>% dplyr::rename("Amoeba2" = tpm),
+                          fread("abundanceA3.tsv") %>% .[,5] %>% dplyr::rename("Amoeba3" = tpm))
 # Clean dataframe and remove isoforms
 Cfrag_tpm_matrix$gene_id <- substring(Cfrag_tpm_matrix$gene_id, 1, nchar(Cfrag_tpm_matrix$gene_id) - 2)
 Cfrag_tpm_matrix <- Cfrag_tpm_matrix[nchar(Cfrag_tpm_matrix$gene_id) <= 10, ]
@@ -1153,58 +915,12 @@ Cfrag_tpm_matrix_by6mAfraction_gg <- ggplot(Cfrag_tpm_matrix_by6mAfraction, aes(
 
 
 # ------------------------------------------------------------------------------
-# Comparison of different expressed genes and different ApT methylated genes in cell stages
-# ------------------------------------------------------------------------------
-
-# Load DEseq results 
-Deseq_MvsA <- fread("../DESeq_resultsCfragMvsA.txt")
-
-# Count the number of upregulated genes
-Deseq_MvsA %>% filter(status == "upregulated") %>% nrow() 
-
-# Count the number of upregulated genes
-Deseq_MvsA%>% filter(status == "upregulated", log2FoldChange < -0.5) %>% nrow()
-
-# Count the number of downregulated genes
-Deseq_MvsA%>% filter(status == "downregulated", log2FoldChange > 0.7) %>% nrow()
-
-# Get the IDs of upregulated genes
-Deseq_MvsA_ids <- Deseq_MvsA %>% filter(status == "upregulated", log2FoldChange < -0.5 ) %>% .$gene_id
-
-# Get the IDs of downregulated genes
-Down_deseq_MvsA_ids <- Deseq_MvsA %>% filter(status == "downregulated", log2FoldChange > 0.7 ) %>% .$gene_id
-
-
-# Create a cleaned dataframe
-Cfrag_6m_df_clean <- Cfrag_MultVsAmoeba %>% dplyr::select(gene, methylated_ApT.x, mApT.x, methylated_ApT.y, mApT.y) %>%
-  dplyr::rename(methylated_ApT_multinucleated = methylated_ApT.x, methylated_ApT_amoeba = methylated_ApT.y,
-                mApT_multinucleated = mApT.x, mApT_amoeba = mApT.y)
-
-# Add a new column with the category of each gene based on DESeq analysis
-Cfrag_6m_df_clean <- Cfrag_6m_df_clean %>% mutate(category = ifelse(gene %in% Deseq_MvsA_ids, "Amoeba_up",
-                                                                    ifelse(gene %in% Down_deseq_MvsA_ids, "Multinucleated_up","Other"))) %>%
-  filter(category != "Other")
-
-# Reshape the dataframe for plotting
-Cfrag_6mAsites_diffExp <- Cfrag_6m_df_clean %>% dplyr::select(gene,category, methylated_ApT_multinucleated, methylated_ApT_amoeba ) %>% melt()
-Cfrag_6mAfrac_diffExp <- Cfrag_6m_df_clean %>% dplyr::select(gene,category, mApT_multinucleated, mApT_amoeba ) %>% melt()
-
-# Create boxplot for methylation at ApT sites
-Cfrag_6mAsites_diffExp_gg <- ggplot(Cfrag_6mAsites_diffExp, aes(x = category, y = value, fill = variable)) + geom_boxplot()
-
-# Create boxplotfor for methylation fractions at ApT sites
-Cfrag_6mAfrac_diffExp_gg <- ggplot(Cfrag_6mAfrac_diffExp, aes(x = category, y = 100*value, fill = variable)) + geom_boxplot()
-
-
-
-
-# ------------------------------------------------------------------------------
 # Correlation in the ApT methylation in different cell stages
 # ------------------------------------------------------------------------------
 
 
 # Load the bs object generated before for your first cell stage
-Multinucleated_ApT_bs_obj <- readRDS("../Cfrag_Multinucleated.AT_bsseq.rds")
+Multinucleated_ApT_bs_obj <- readRDS("Cfrag_Multinucleated.AT_bsseq.rds")
 
 # Get the methylation matrix (M) 
 Multinucleated_methylated_sites <- getMeth(Multinucleated_ApT_bs_obj, type = "raw", what = "perBase")
