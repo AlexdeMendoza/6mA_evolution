@@ -481,7 +481,32 @@ for (decile_value in Cfra_Multinucleated_decile_values) {
   # Write the subset data to a file
   write.table(subset_data, file = paste0("Ngru_", gsub("\\s+", "", decile_value), ".txt"), sep = "\t", quote = FALSE, row.names = FALSE)
 }
+# these files were later plotted with DeepTools2 computeMatrix function
 
+####Unix command line code to plot different gene expression deciles against 6mAT levels####
+#
+### Extract the first column of decile files generated before
+#awk '{print $1}' Species0-10%.txt > first_decile
+#awk '{print $1}' Species10-20%.txt > second_decile
+#…Repeat for the rest of deciles…
+#awk '{print $1}' Species90-100%.txt > tenth_decile
+#awk '{print $1}' SpeciesNoexpr.txt > no_expression
+#
+## Extract gene annotations corresponding to the genes in each decile
+#fgrep -w -f first_decile Species.annotations.gene.bed > first_decile.bed
+#fgrep -w -f second_decile Species.annotations.gene.bed > second_decile.bed
+#…repeat for the rest of deciles…
+#fgrep -w -f tenth_decile Species.annotations.gene.bed > tenth_decile.bed
+#fgrep -w -f no_expression Species.annotations.gene.bed > no_expression.bed
+#
+## Compute matrix using the Transcription Start Site as reference point
+#computeMatrix reference-point --referencePoint TSS -out Species.TSS.expression.dtmatrix -S Species.R9_6mA.methyl.ApT.bigwig -R tenth_decile.bed seventh_decile.bed sixth_decile.bed third_decile.bed second_decile.bed no_expression.bed -a 2000 -b 2000 -bs 10 -p 20
+#
+## Plot heatmap using the computed matrix
+#plotHeatmap -m Species.TSS.expression.dtmatrix -out Species.TSS.expression.heatmap.pdf --colorMap Reds --regionsLabel 90-100% 60-70% 50-60% 20-30% 10-20% "No expression" --samplesLabel 6mAT --missingDataColor="silver" --interpolationMethod nearest
+#
+################################################################################
+                                   
 # Assign a decile category to genes based on their 6mA levels
 genes_m6A_filt$decile_6mA <- ntile(genes_m6A_filt$mApT, 10)
 
@@ -580,12 +605,20 @@ write.table(h2h_m, file = "Cfrag_Multinucleated.head_to_head.methyl.bed",quote =
 write.table(h2h_u, file = "Cfrag_Multinucleated.head_to_head.unmethyl.bed",quote = FALSE, sep = "\t",row.names = F, col.names = F)
 write.table(h2t_m, file = "Cfrag_Multinucleated.head_to_tail.methyl.bed",quote = FALSE, sep = "\t",row.names = F, col.names = F)
 write.table(h2t_u, file = "Cfrag_Multinucleated.head_to_tail.unmethyl.bed",quote = FALSE, sep = "\t",row.names = F, col.names = F)
-
 # these files were later plotted with DeepTools2 computeMatrix function
-##
 
+                                   
+####Unix command line code to plot gene orientation bed files against 6mAT levels####
+#
+##Compute matrix using the Transcription Start Site as reference point
+#computeMatrix reference-point --referencePoint TSS -out SpeciesTSS.GeneOrientation.dtmatrix -S Species.R9_6mA.methyl.ApT.bigwig -R Species.head_to_head.methyl.bed Species.head_to_tail.methyl.bed -a 2000 -b 2000 -bs 10 -p 20
+#
+##Plot heatmap using the computed matrix
+#plotHeatmap -m SpeciesTSS.GeneOrientation.dtmatrix -out SpeciesTSS.GeneOrientation.heatmap.pdf --colorMap Reds --regionsLabel “Head to head methylated genes" “Head to tail methylated genes" --samplesLabel 6mAT --missingDataColor="silver" --interpolationMethod nearest
+#
+################################################################################                                   
 
-
+                                   
 ################################################################################
 ### Mean global methylation levels across genomic features
 ################################################################################
