@@ -59,7 +59,7 @@ Species_order <- c("Cfra", "Aapp", "Awhi", "Cper", "Clim", "Spun", "Acas", "Crei
 #
 ################################################################################
 
-
+# Cfrag.R9_6mA.methyl.context.bed.gz is used as example, but all methylBeds were treated the same way.
 
 # Load the .bed file with the genomic information generated before
 df <- fread("../Cfrag.R9_6mA.methyl.context.bed.gz")
@@ -93,6 +93,11 @@ bs_obj <- BSseq(gr = GRanges(seqnames = dat$chr,
 getMeth(bs_obj, type = "raw", what = "perBase") %>% hist(breaks = 100, main = "Distribution of 6mA levels", xlab = "6mA %")
 
 
+
+# ------------------------------------------------------------------------------
+# Plot the ApT strand correlation values of all species
+# ------------------------------------------------------------------------------
+
 # Calculate correlation between the methylation in + and - strands 
 
 AT_dinuc <- dat %>% mutate(locus = if_else(strand == "+", paste0(chr,":",start+1),paste0(chr,":",start) )) %>%
@@ -114,15 +119,8 @@ cor(AT_dinuc$mC_perc.x,AT_dinuc$mC_perc.y, method = "spearman")
 # Merge the values from + and - strand into a single "ApT" value
 bs_obj_collapsed <- strandCollapse(bs_obj)
 
-
 # Save the BSobject as a RDS object,
 saveRDS(object = bs_obj_collapsed, file = paste0(name,".AT_bsseq.rds"))
-
-
-# ------------------------------------------------------------------------------
-# Plot the correlation values of all species
-# ------------------------------------------------------------------------------
-
 
 # Calculate Pearson and Spearman correlation
 
@@ -164,7 +162,7 @@ AT_Pearson_Correlation_Bar_Chart<- ggplot(AT_Pearson_Correlation_DF_long, aes(x 
 
 
 # ------------------------------------------------------------------------------
-# Load gene bed file and get the 6mA from it
+# Load gene bed file and get the 6mApT levels on gene bodies
 # ------------------------------------------------------------------------------
 
 
@@ -197,6 +195,8 @@ add_loci <- function(gr){
   
 }
 
+# all gene beds are "chr start end name ID strand" format.
+
 # Load the gene bed file for a species
 genes <- read_bed6_to_GRobject("PASA_Creolimax2.gene.bed") 
 
@@ -226,17 +226,16 @@ get_mA_on_ranges <- function(bs_obj, gene_gr, thres = 0.1){
   return(df)
 }
 
-# Calculate the 6mA (regional and per ApT) for every gene
+# Calculate the 6mAT (regional and per ApT) for every gene
 genes_m6A <- get_mA_on_ranges(bs_obj = bs_obj_collapsed, gene_gr = genes)
 
 
 # Check the coverage of each gene 
 genes_m6A$mean_coverage %>% hist( breaks = 50, main = "Mean coverage per gene")
 
-# Discard genes with mean coverage < 10x 
+# Discard genes with mean coverage < 10x (this value was adjusted for species with low coverage)
 total_gene_num <- genes_m6A %>% nrow() 
 total_gene_covered <- genes_m6A %>% filter(mean_coverage >= 10) %>% nrow() 
-
 
 # Filter those genes with 10x
 genes_m6A_filt <- genes_m6A %>% filter(mean_coverage >= 10)
@@ -288,7 +287,7 @@ Percentage_of_genes_data_long <- gather(Methylated_vs_unmethylated_genes, key = 
 Number_of_genes_data_long <- gather(Methylated_vs_unmethylated_genes, key = "GeneStatus", value = "NumberOfGenes",
                                     Unmethylated_genes, Methylated_genes)
 
-# Plot the percentage of methylation genes
+# Plot the percentage of methylated genes
 Percentage_Genes_Methylation_Plot <- ggplot(Percentage_of_genes_data_long, aes(x = reorder(Species, match(Species, Species_order)), y = Percentage, fill = reorder(GeneStatus, -Percentage))) +
   geom_bar(stat = "identity", position = 'stack') +
   geom_text(aes(label = scales::percent(Percentage, scale = 1)), position = position_stack(vjust = 0.5), color = "black", size = ) +
@@ -301,7 +300,7 @@ Percentage_Genes_Methylation_Plot <- ggplot(Percentage_of_genes_data_long, aes(x
   theme_minimal()
 
 
-# Plot the numnber of methylation genes
+# Plot the number of methylated genes
 Number_Genes_Methylation_Plot <- ggplot(Number_of_genes_data_long, aes(x = reorder(Species, match(Species, Species_order)), y = NumberOfGenes, fill = reorder(GeneStatus, -NumberOfGenes))) +
   geom_bar(stat = "identity", position = 'stack') + 
   geom_text(aes(label = NumberOfGenes), position = position_stack(vjust = 0.5), color = "black", size = 3) +
@@ -424,7 +423,7 @@ combo_plots <- plot_grid(bar_chartANumber, bar_chartATNumber, ncol = 1 )
 #
 ################################################################################
 
-
+# input the data from the previous bash script into R
 df <- fread("SpeciesMethStats.txt")
 
 df$Species <- factor(df$Species, levels = df$Species)
@@ -474,9 +473,8 @@ combo_plots <- plot_grid(mALevels, mATLevels, mAALevels, mACLevels, mAGLevels, S
 
 
 ################################################################################
-###Comparison between A methylation and transcription
+### Comparison between 6mAT methylation and transcription
 ################################################################################
-
 
 
 #########Unix command line code to produce an abundance transcriptomic file from raw RNA-seq fastq file#########
@@ -504,18 +502,17 @@ combo_plots <- plot_grid(mALevels, mATLevels, mAALevels, mACLevels, mAGLevels, S
 #sambamba sort -t $NSLOTS -o ${name}.hisat2.sorted.bam ${name}.hisat2.bam
 #
 #
-##Run stringtie to assemble transcripts 
+##Run stringtie to assemble transcripts (if the library is stranded)
 #stringtie --rf -G Genomic.gtf -A Species.RNAseq_abundance.tsv -e ${name}.hisat2.sorted.bam
 #
 ################################################################################
-
 
 
 # Load RNA-seq data
 tpm <-fread("Cfra_Multinucleated.RNAseq_abundance.tsv") %>% dplyr::rename(gene = "Gene\ ID") %>% 
   dplyr::select(gene, TPM)
 
-# Loin RNA and 6mA data
+# Join RNA and 6mA data
 genes_m6A_filt <- inner_join(genes_m6A_filt, tpm)
 
 # Check correlation between 6mA and TPM
@@ -526,7 +523,6 @@ cor(genes_m6A_filt$methylated_ApT, genes_m6A_filt$TPM, method = "spearman", use 
 # Assign decile category to genes based on their TPM values
 genes_m6A_filt$decile_tpm <- cut(genes_m6A_filt$TPM, breaks = c(0,quantile(genes_m6A_filt$TPM[genes_m6A_filt$TPM >= 1], seq(0, 1, length = 11), type = 5)),
                                  labels = c("No expr.","0-10%","10-20%","20-30%","30-40%","40-50%","50-60%","60-70%","70-80%","80-90%","90-100%"))
-
 
 
 # Adjust the decile category for genes with TPM = 0 to "No expr."
@@ -574,7 +570,7 @@ combo_plots <- plot_grid(gg_6mA_vs_tx_genes,gg_6mAsites_vs_tx_genes, gg_tx_genes
 
 
 ################################################################################
-###Check promoter methylation
+### Gene orientation analysis and impact on 6mAT patterns
 ################################################################################
 
 # Function to classify genes based on upstream gene direction
@@ -645,12 +641,12 @@ write.table(h2h_u, file = "Cfrag_Multinucleated.head_to_head.unmethyl.bed",quote
 write.table(h2t_m, file = "Cfrag_Multinucleated.head_to_tail.methyl.bed",quote = FALSE, sep = "\t",row.names = F, col.names = F)
 write.table(h2t_u, file = "Cfrag_Multinucleated.head_to_tail.unmethyl.bed",quote = FALSE, sep = "\t",row.names = F, col.names = F)
 
-
-
+# these files were later plotted with DeepTools2 computeMatrix function
+##
 
 
 ################################################################################
-###CG correlation plot
+### CpG strand correlation plot
 ################################################################################
 
 
@@ -709,10 +705,8 @@ CG_Pearson_Correlation_Bar_Chart<- ggplot(CG_Pearson_Correlation_DF_long, aes(x 
   scale_y_continuous(limits = c(min(df_longA$value), max(df_longA$value)))
 
 
-
-
 ################################################################################
-###Mean methylation levels across context
+### Mean global methylation levels across genomic features
 ################################################################################
 
 # Define promoter region in genes 
@@ -786,16 +780,16 @@ Methylation_TES <- mean(TES_m6A_filt[,6])
 ################################################################################
 
 
-# Load the .bed file with the repeatiteve elements
+# Load the .bed file with the repetitive elements
 Repeats <- read_bed6_to_GRobject("Cfra.RepeatMasker.bed")
 
-# Calculate the 6mA (regional and per ApT) in the repeatitive elements
+# Calculate the 6mA (regional and per ApT) in the repetitive elements
 Repeats_m6A <- get_mA_on_ranges(bs_obj, gene_gr = Repeats)
 
 # Filtrate the repeatitive elements that have a coverage of less than 10x
 Repeats_m6A_filt <- Repeats_m6A %>% filter(mean_coverage >= 10)
 
-# Calculate the mean methylation of the repeatitive elements
+# Calculate the mean methylation of the repetitive elements
 Methylation_Repeats <- mean(Repeats_m6A_filt[,6])
 
 
@@ -890,7 +884,7 @@ Combo_plots_ObservedExpected <- plot_grid(AT_ObservedVsExpected_Methylation_bar_
 
 
 ################################################################################
-###Different cell stages analysis
+### Cell stage specific analysis for A. castellanii and C. fragrantissima
 ################################################################################
 
 # ------------------------------------------------------------------------------
@@ -1159,7 +1153,7 @@ Cfrag_tpm_matrix_by6mAfraction_gg <- ggplot(Cfrag_tpm_matrix_by6mAfraction, aes(
 
 
 # ------------------------------------------------------------------------------
-# Comparrison of different expressed genes and different ApT methylated genes in cell stages
+# Comparison of different expressed genes and different ApT methylated genes in cell stages
 # ------------------------------------------------------------------------------
 
 # Load DEseq results 
