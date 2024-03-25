@@ -1,0 +1,19 @@
+#########Unix command line code to plot the ApT genome composition aagainst 6mAT levels#########
+
+# Run megalodon_extras to create BED file containing motif positions for motif "AT"
+megalodon_extras modified_bases create_motif_bed --motif AT 0 --out-filename Species.AT_motif.consensus.bed Genome.fasta
+
+# Convert the BED file to bedGraph format, adjusting coordinates for positive strand
+cat Species.AT_motif.consensus.bed | awk '$6 == "+" {print $1,$2,$3+1,"1"}' > Species.AT_motif.consensus.bedGraph
+
+# Sort the bedGraph file
+LC_COLLATE=C sort -k1,1 -k2,2n Species.AT_motif.consensus.bedGraph > Species.AT_motif.consensus.sorted.bedGraph
+
+# Run bedGrpahToBigWig to convert the sorted bedGraph file into bigwig
+bedGraphToBigWig Species.AT_motif.consensus.sorted.bedGraph Genome.fasta.fai Species.AT_motif.consensus.bigwig
+
+# Compute matrix using the Transcription Start Site as reference point
+computeMatrix reference-point --referencePoint TSS -out SpeciesTSS.composition.dtmatrix -S Species.AT_motif.consensus.bigwig -R Species.Methyl.bed Species.Unmethyl.bed -a 2000 -b 2000 -bs 10 -p 20 --missingDataAsZero
+
+# Plot heatmap using the computed matrix
+plotHeatmap -m SpeciesTSS.composition.dtmatrix -out SpeciesTSS.composition.heatmap.pdf --colorMap Reds --regionsLabel "m6A Genes" "other Genes" --samplesLabel AT --missingDataColor="silver" --interpolationMethod nearest
