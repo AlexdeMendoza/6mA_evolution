@@ -592,7 +592,19 @@ Unmethylated_genes <- genes_to_subset %>% filter(status == "Unmethylated") %>% .
 # Save the bed files for further analysis
 write.table(Methylated_genes, file = "Cfrag_Multinucleated.Methyl.bed",quote = FALSE, sep = "\t",row.names = F, col.names = F)
 write.table(Unmethylated_genes, file = "Cfrag_Multinucleated.Unmethyl.bed",quote = FALSE, sep = "\t",row.names = F, col.names = F)
+#these files were later plotted with DeepTools2 computeMatrix function
 
+##Unix command line code to plot Methylated and Unmethylated genes bed files against 6mAT levels##
+#
+## Compute matrix using the Transcription Start Site as reference point
+#computeMatrix reference-point --referencePoint TSS -out SpeciesTSS.MethylatedGenes.dtmatrix -S Species.R9_6mA.methyl.ApT.bigwig -R Species.Methyl.bed Species.Unmethyl.bed -a 2000 -b 2000 -bs 10 -p 20
+#
+## Plot heatmap using the computed matrix
+#plotHeatmap -m SpeciesTSS.MethylatedGenes.dtmatrix -out SpeciesTSS.MethylatedGenes.heatmap.pdf --colorMap Reds --regionsLabel "m6A Genes" "other Genes" --samplesLabel 6mAT --missingDataColor="silver" --interpolationMethod nearest
+#
+################################################################################ 
+
+                                   
 # Create subsets based on gene orientation and methylation status
 h2h_m <- genes_to_subset %>% filter(orientation == "Head_to_Head", status == "Methylated") %>% .[,(1:6)]
 h2h_u <- genes_to_subset %>% filter(orientation == "Head_to_Head", status == "Unmethylated") %>% .[,(1:6)]
@@ -610,10 +622,10 @@ write.table(h2t_u, file = "Cfrag_Multinucleated.head_to_tail.unmethyl.bed",quote
                                    
 ####Unix command line code to plot gene orientation bed files against 6mAT levels####
 #
-##Compute matrix using the Transcription Start Site as reference point
+## Compute matrix using the Transcription Start Site as reference point
 #computeMatrix reference-point --referencePoint TSS -out SpeciesTSS.GeneOrientation.dtmatrix -S Species.R9_6mA.methyl.ApT.bigwig -R Species.head_to_head.methyl.bed Species.head_to_tail.methyl.bed -a 2000 -b 2000 -bs 10 -p 20
 #
-##Plot heatmap using the computed matrix
+## Plot heatmap using the computed matrix
 #plotHeatmap -m SpeciesTSS.GeneOrientation.dtmatrix -out SpeciesTSS.GeneOrientation.heatmap.pdf --colorMap Reds --regionsLabel “Head to head methylated genes" “Head to tail methylated genes" --samplesLabel 6mAT --missingDataColor="silver" --interpolationMethod nearest
 #
 ################################################################################                                   
