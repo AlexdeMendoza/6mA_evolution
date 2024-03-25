@@ -46,16 +46,27 @@ Species_order <- c("Cfra", "Aapp", "Awhi", "Cper", "Clim", "Spun", "Acas", "Crei
 #modbam2bed -e -m 5mC -t 30 Genome.fasta guppy_GPU_allmods_R9/Allmods.merged.sorted.bam > Species.R9_5mC.methyl.bed
 #
 ## Run bedtools to create coordinates with neighbouring sequence context for every position
-# bedtools slop -l 1 -r 2 -s -i Species.R9_6mA.methyl.bed -g Genome.fasta.fai > Species.R9_6mA.methyl.plus3.bed
+#bedtools slop -l 1 -r 2 -s -i Species.R9_6mA.methyl.bed -g Genome.fasta.fai > Species.R9_6mA.methyl.plus3.bed
 #
 ## Run bedtools to extract sequence context from the genome FASTA file based on the coordinates 
-# bedtools getfasta -fi Genome.fasta -fo Species.R9_6mA.methyl.plus3.fa -s -bed Species.R9_6mA.methyl.plus3.bed
+#bedtools getfasta -fi Genome.fasta -fo Species.R9_6mA.methyl.plus3.fa -s -bed Species.R9_6mA.methyl.plus3.bed
 #
 ## Run seqkit to convert FASTA format to tab-separated format and extracting sequences
-# seqkit fx2tab Species.R9_6mA.methyl.plus3.fa | cut -f 2 > a
+#seqkit fx2tab Species.R9_6mA.methyl.plus3.fa | cut -f 2 > a
 #
 # Merge BED file containing genomic coordinates with the extracted sequences
-# paste Species.R9_6mA.methyl.bed a > Species.R9_6mA.methyl.context.bed
+#paste Species.R9_6mA.methyl.bed a > Species.R9_6mA.methyl.context.bed
+#
+# Filter lines containing the pattern [ATCG]AT[ATCG] and extract columns 1, 2, 3, and 11 to produce a bedgraph file
+#awk '$17 ~ /[ATCG]AT[ATCG]/' Species.R9_6mA.methyl.context.bed | cut -f 1,2,3,11 > Species.R9_6mA.methyl.ApT.bedGraph
+#
+# Sort the bedGraph file
+#LC_COLLATE=C sort -k1,1 -k2,2n Species.R9_6mA.methyl.ApT.bedGraph > Species.R9_6mA.methyl.ApT.sorted.bedGraph
+#
+# Run bedGrpahToBigWig to convert the sorted bedGraph file into bigwig
+#bedGraphToBigWig Species.R9_6mA.methyl.ApT.sorted.bedGraph Genome.fasta.fai Species.R9_6mA.methyl.ApT.bigwig
+#
+# Bigwig files are used later on the genome browser (IGV) and in DeepTools2 plots
 #
 ################################################################################
 
