@@ -41,3 +41,5 @@ To perform the analysis in this manuscript you can download the original softwar
 **megalodon** —> https://github.com/nanoporetech/megalodon
 
 **gffread** —> https://github.com/gpertea/gffread
+
+The steps on how to run them are found in the `6mA_evolution_script.R` master script.
