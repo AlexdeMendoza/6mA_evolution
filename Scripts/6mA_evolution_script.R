@@ -1,3 +1,19 @@
+# Intall the required libraries
+
+install.packages("data.table")
+install.packages("stringr")
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("tidyr")
+install.packages("R.utils")
+install.packages("reshape2")
+install.packages("ggseqlogo")
+install.packages("cowplot")
+install.packages("BiocManager")
+BiocManager::install("bsseq")
+
+# Load the required libraries
+
 library(data.table)
 library(stringr)
 library(ggplot2)
